@@ -11,3 +11,5 @@ void arithmeticMean();
 void weightingMean();
 void multiple();
 void factor();
+void geomean();
+void oddeven();

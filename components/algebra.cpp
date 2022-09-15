@@ -1,5 +1,6 @@
 #include <iostream>
 #include "algebra.h"
+#include <math.h>
 
 using namespace std;
 
@@ -291,6 +292,54 @@ void multiple() {
 
   }
 
+  cout << "\n9. Exit" << endl;
+  cin >> aws;
+
+  if (aws == 9) {
+    system("cls");
+    main();
+  }
+
+}
+
+void geomean() {
+
+  int a, b, result, aws;
+
+  cout << "Enter the first number" << endl;
+  cin >> a;
+
+  cout << "\nEnter the second number" << endl;
+  cin >> b;
+
+  result = sqrt(a*b);
+  cout << "\nThe result = " << result << endl;
+  cout << "\n9. Exit" << endl;
+  cin >> aws;
+
+  if (aws == 9) {
+    system("cls");
+    main();
+  }
+}
+
+void oddeven() {
+
+  int number, aws;
+  string type;
+
+  cout << "Enter a number" << endl;
+  cin >> number;
+
+  if (number % 2 == 0) {
+    type = "even";
+    
+  } else {
+    type = "odd";
+
+  }
+
+  cout << "\nThe number is " << type << endl;
   cout << "\n9. Exit" << endl;
   cin >> aws;
 

@@ -12,14 +12,14 @@ int main() {
   int choose;
 
   cout << "Welcome to Eleven Terminal!" << endl;
-  cout << "\n1. Clasic Calculator" << endl;
+  cout << "\n1. Clasic calculator" << endl;
   cout << "2. Algebra calculations" << endl;
-  cout << "3. The sum of the digits of a number" << endl;
-  cout << "4. Geometric Area" << endl;
-  cout << "5. Percentages" << endl;
-  cout << "6. Possibility" << endl;
-  cout << "7. Angle calculation" << endl;
-  cout << "\n8. About" << endl;
+  cout << "3. Geometric Area" << endl;
+  cout << "4. Percent calculation" << endl;
+  cout << "5. Geometry calculation" << endl;
+  cout << "\n6. Info" << endl;
+  cout << "7. Tutorials" << endl;
+  cout << "8. About" << endl;
   cout << "9. Creator" << endl;
   cout << "10. GitHub" << endl;
   cout << "11. Updates" << endl;
@@ -31,7 +31,7 @@ int main() {
       system("cls");
       simpleCalculator();
     case 2:
-      int choose;
+      
       system("cls");
       cout << "1. Arithmetic mean" << endl;
       cout << "2. Weighting mean" << endl;
@@ -40,7 +40,9 @@ int main() {
       cout << "5. The square of a number" << endl;
       cout << "6. Greatest common factor" << endl;
       cout << "7. The least common multiple" << endl;
-
+      cout << "8. The sum of the digits of a number" << endl;
+      cout << "9. Geometric mean" << endl;
+      cout << "10. Even or Odd number" << endl;
       cin >> choose;
 
       if (choose == 1){
@@ -64,14 +66,20 @@ int main() {
       } else if(choose == 7) {
         system("cls");
         multiple();
+      } else if (choose == 8) {
+        system("cls");
+        digit();
+      } else if (choose == 9) {
+        system("cls");
+        geomean();
+      } else if (choose == 10) {
+        system("cls");
+        oddeven();
       }
 
 
 
     case 3:
-      system("cls");
-      digit();
-    case 4:
       int alt;
       system("cls");
 
@@ -102,15 +110,35 @@ int main() {
           system("cls");
           circle();
       }
+
+    case 4:
+      system("cls");
+      
+      cout << "1. Percentages" << endl;
+      cout << "2. Possibility" << endl;
+      cin >> choose;
+      if (choose == 1) {
+        system("cls");
+        percentages();
+      } else if(choose == 2) {
+        system("cls");
+        possibility();
+      }
     case 5:
       system("cls");
-      percentages();
+      
+      cout << "1. Angle calculation" << endl;
+      cin >> choose;
+      if (choose == 1) {
+        system("cls");
+        angle();
+      }
     case 6:
       system("cls");
-      possibility();
+      info();
     case 7:
       system("cls");
-      angle();
+      tutorials();
     case 8:
       system("cls");
       about();

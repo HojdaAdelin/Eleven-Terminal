@@ -222,18 +222,28 @@ void angle() {
 
   if (angle3 < 90){
     type = "type = sharp angle";
-  } else if (angle3 > 90) {
+  } else if (angle3 > 90 && angle3 < 180) {
     type = "type = obtuse angle";
-  } else if (angle3 == 0) {
+  } else if (angle3 <= 0) {
     type = "type = null angle";
-  } else if (angle3 == 180) {
+  } else if(angle3 > 89 && angle3 < 91){
+    type = "type = right angle";
+  }
+    else if (angle3 >= 180) {
     type = "type = elongate angle";
   } else {
     type = "type = none";
   }
 
   cout << "\nThe result = " << angle3 << " and " << type << endl;
-  system("pause");
+  
+  cout << "\n9. Exit" << endl;
+  cin >> aws;
+
+  if (aws == 9) {
+      system("cls");
+      main();
+  }
 }
 
 
