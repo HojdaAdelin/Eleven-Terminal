@@ -1,22 +1,29 @@
 #include <iostream>
 #include "calculator.h"
-
+#include <math.h>
 
 using namespace std;
 
 void simpleCalculator() {
-  char operation;
-  int number1, number2, result, aws;
+  
+  int number1, number2, result, aws, operation;
 
 
-  cout << "Enter the operatiun do you want\n+\n-\n*\n/\n%" << endl; cout << endl;
+  cout << "Select the operation:" << endl;
+  cout << "\n1. +" << endl;
+  cout << "2. -" << endl;
+  cout << "3. *" << endl;
+  cout << "4. /" << endl;
+  cout << "5. %" << endl;
+  cout << "6. sqrt" << endl;
+
   cin >> operation;
 
   cout << "\nEnter 2 numbers" << endl;
   cin >> number1 >> number2;
 
   switch (operation) {
-    case '+':
+    case 1:
       cout << endl;
       cout << number1 << " + " << number2 << " = " << number1 + number2;
       cout << "\n\n9. Exit" << endl;
@@ -25,7 +32,7 @@ void simpleCalculator() {
         system("cls");
         main();
       }
-    case '-':
+    case 2:
       cout << endl;
       cout << number1 << " - " << number2 << " = " << number1 - number2;
       cout << "\n\n9. Exit" << endl;
@@ -34,7 +41,7 @@ void simpleCalculator() {
         system("cls");
         main();
       }
-    case '*':
+    case 3:
       cout << endl;
       cout << number1 << " * " << number2 << " = " << number1 * number2;
       cout << "\n\n9. Exit" << endl;
@@ -43,7 +50,7 @@ void simpleCalculator() {
         system("cls");
         main();
       }
-    case '/':
+    case 4:
       cout << endl;
       cout << number1 << " / " << number2 << " = " << number1 / number2;
       cout << "\n\n9. Exit" << endl;
@@ -52,7 +59,7 @@ void simpleCalculator() {
         system("cls");
         main();
       }
-    case '%':
+    case 5:
       cout << endl;
       cout << number1 << " % " << number2 << " = " << number1 % number2;
       cout << "\n\n9. Exit" << endl;
@@ -61,12 +68,18 @@ void simpleCalculator() {
         system("cls");
         main();
       }
-    default:
-      if(operation != '+' || '-' || '*' || '/' || '%'){
-        cout << "\nError! Enter a valid number and operation" << endl;
-        system("pause");
+    case 6:
+      cout << "\nSQRT " << number1 << " = " << sqrt(number1) << "\nSQRT " << number2 << " = " << sqrt(number2) << endl;
+      cout << "\n9. Exit" << endl;
+      cin >> aws;
+      if (aws == 9) {
+        system("cls");
+        main();
       }
+      system("pause");    
 
   }
+
+
 
 }

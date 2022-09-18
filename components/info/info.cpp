@@ -12,12 +12,12 @@ void about(){
   cout << "This app was created for simplify calculation." << endl;
   cout << "Country of origin: Romania" << endl;
   cout << "Date of creation: September, 2022" << endl;
-  cout << "Version: 2.6" << endl;
-  cout << "Hours of work: 5-8 hours" << endl;
-  cout << "Building ID: GRe78000fHiK0871" << endl;
+  cout << "Version: 2.64" << endl;
+  cout << "Hours of work: 16 hours" << endl;
+  cout << "Building ID: iRe90996fHiK0871" << endl;
   cout << "Version ID: 2.5400GP" << endl;
-  cout << "URank: 0.739" << endl;
-  cout << "Operation Result Prediction: above 9.05" << endl;
+  cout << "URank: 0.740" << endl;
+  cout << "Operation Result Prediction: above 9.11" << endl;
   cout << "Serial Number: Hj3H0050" << endl;
   cout << endl;
 
@@ -78,9 +78,9 @@ void updates(){
 
   system("cls");
 
-  cout << "Current version: 2.6" << endl;
+  cout << "Current version: 2.64" << endl;
   cout << "\nUpdate news: " << endl;
-  cout << "\n-New Menu\n-New menu (Info)\n-New menu (Tutorials)\n-Geometric mean\n-Even number & odd number" << endl;
+  cout << "\n-Simple Calculator update\n-Source update\n-Bug fixed" << endl;
   cout << "\n7. Link for updates" << endl;
   cout << "9. Exit" << endl;
 
