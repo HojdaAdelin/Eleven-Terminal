@@ -26,57 +26,81 @@ void simpleCalculator() {
     case 1:
       cout << endl;
       cout << number1 << " + " << number2 << " = " << number1 + number2;
-      cout << "\n\n9. Exit" << endl;
+      cout << "\n\n8. Retry" << endl;
+      cout << "9. Exit" << endl;
       cin >> aws;
       if (aws == 9) {
         system("cls");
         main();
+      } else if (aws == 8) {
+        system("cls");
+        simpleCalculator();
       }
     case 2:
       cout << endl;
       cout << number1 << " - " << number2 << " = " << number1 - number2;
-      cout << "\n\n9. Exit" << endl;
+      cout << "\n\n8. Retry" << endl;
+      cout << "9. Exit" << endl;
       cin >> aws;
       if (aws == 9) {
         system("cls");
         main();
+      } else if (aws == 8) {
+        system("cls");
+        simpleCalculator();
       }
     case 3:
       cout << endl;
       cout << number1 << " * " << number2 << " = " << number1 * number2;
-      cout << "\n\n9. Exit" << endl;
+      cout << "\n\n8. Retry" << endl;
+      cout << "9. Exit" << endl;
       cin >> aws;
       if (aws == 9) {
         system("cls");
         main();
+      } else if (aws == 8) {
+        system("cls");
+        simpleCalculator();
       }
     case 4:
       cout << endl;
       cout << number1 << " / " << number2 << " = " << number1 / number2;
-      cout << "\n\n9. Exit" << endl;
+      cout << "\n\n8. Retry" << endl;
+      cout << "9. Exit" << endl;
       cin >> aws;
       if (aws == 9) {
         system("cls");
         main();
+      } else if (aws == 8) {
+        system("cls");
+        simpleCalculator();
       }
     case 5:
       cout << endl;
       cout << number1 << " % " << number2 << " = " << number1 % number2;
-      cout << "\n\n9. Exit" << endl;
+      cout << "\n\n8. Retry" << endl;
+      cout << "9. Exit" << endl;
       cin >> aws;
       if (aws == 9) {
         system("cls");
         main();
+      } else if (aws == 8) {
+        system("cls");
+        simpleCalculator();
       }
     case 6:
       cout << "\nSQRT " << number1 << " = " << sqrt(number1) << "\nSQRT " << number2 << " = " << sqrt(number2) << endl;
-      cout << "\n9. Exit" << endl;
+      cout << "\n\n8. Retry" << endl;
+      cout << "9. Exit" << endl;
       cin >> aws;
       if (aws == 9) {
         system("cls");
         main();
+      } else if (aws == 8) {
+        system("cls");
+        simpleCalculator();
       }
-      system("pause");    
+      
 
   }
 

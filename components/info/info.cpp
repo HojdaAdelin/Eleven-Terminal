@@ -12,7 +12,7 @@ void about(){
   cout << "This app was created for simplify calculation." << endl;
   cout << "Country of origin: Romania" << endl;
   cout << "Date of creation: September, 2022" << endl;
-  cout << "Version: 2.64" << endl;
+  cout << "Version: 2.65" << endl;
   cout << "Hours of work: 16 hours" << endl;
   cout << "Building ID: iRe90996fHiK0871" << endl;
   cout << "Version ID: 2.5400GP" << endl;
@@ -78,9 +78,9 @@ void updates(){
 
   system("cls");
 
-  cout << "Current version: 2.64" << endl;
+  cout << "Current version: 2.65" << endl;
   cout << "\nUpdate news: " << endl;
-  cout << "\n-Simple Calculator update\n-Source update\n-Bug fixed" << endl;
+  cout << "\n-Retry function\n-Main Menu function" << endl;
   cout << "\n7. Link for updates" << endl;
   cout << "9. Exit" << endl;
 

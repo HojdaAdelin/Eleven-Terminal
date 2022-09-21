@@ -33,13 +33,13 @@ void triangleArea(){
 
       operation = base * height / 2;
       cout << "The result = " << operation << endl;
-      cout << endl;
-      cout << "9. Exit" << endl;
+      
+      cout << "\n9. Exit" << endl;
       cout << endl;
       cin >> awv;
-      if (awv = 9){
+      if (awv == 9){
         triangleArea();
-      }
+      } 
 
     case 2:
       system("cls");
@@ -114,13 +114,16 @@ void squareArea(){
   operation = side * side;
   cout << endl;
   cout << "The result = " << operation << endl;
-  cout << endl;
+  
+  cout << "\n8. Retry" << endl;
   cout << "9. Exit" << endl;
   cin >> aws;
-  switch (aws) {
-    case 9:
-      system("cls");
-      main();
+  if (aws == 9) {
+    system("cls");
+    main();
+  } else if(aws == 8) {
+    system("cls");
+    squareArea();
   }
 }
 
@@ -140,14 +143,15 @@ void rightangleArea(){
   operation = side1 * side2;
 
   cout << "The result = " << operation << endl;
-  cout << endl;
+  cout << "\n8. Retry" << endl;
   cout << "9. Exit" << endl;
   cin >> aws;
-
-  switch (aws) {
-    case 9:
-      system("cls");
-      main();
+  if (aws == 9) {
+    system("cls");
+    main();
+  } else if(aws == 8) {
+    system("cls");
+    rightangleArea();
   }
 
 }
@@ -165,13 +169,15 @@ void diamondArea(){
   cout << endl;
   operation = diagonal1 * diagonal2 / 2;
   cout << "The result = " << operation << endl;
-  cout << endl;
+  cout << "\n8. Retry" << endl;
   cout << "9. Exit" << endl;
   cin >> aws;
-  switch (aws) {
-    case 9:
-      system("cls");
-      main();
+  if (aws == 9) {
+    system("cls");
+    main();
+  } else if(aws == 8) {
+    system("cls");
+    diamondArea();
   }
 }
 
@@ -193,15 +199,15 @@ void trapezeArea(){
   operation = ((baseL + baseS) * height) / 2;
 
   cout << "The result = " << operation << endl;
-  cout << endl;
-
+  cout << "\n8. Retry" << endl;
   cout << "9. Exit" << endl;
   cin >> aws;
-
-  switch (aws) {
-    case 9:
-      system("cls");
-      main();
+  if (aws == 9) {
+    system("cls");
+    main();
+  } else if(aws == 8) {
+    system("cls");
+    trapezeArea();
   }
 
 }
@@ -237,12 +243,15 @@ void angle() {
 
   cout << "\nThe result = " << angle3 << " and " << type << endl;
   
-  cout << "\n9. Exit" << endl;
+  cout << "\n8. Retry" << endl;
+  cout << "9. Exit" << endl;
   cin >> aws;
-
   if (aws == 9) {
-      system("cls");
-      main();
+    system("cls");
+    main();
+  } else if(aws == 8) {
+    system("cls");
+    angle();
   }
 }
 
@@ -258,13 +267,14 @@ void circle() {
 
   cout << "\nThe result = " << result << endl;
 
-  cout << "\n9. Exit" << endl;
+  cout << "\n8. Retry" << endl;
+  cout << "9. Exit" << endl;
   cin >> aws;
-
   if (aws == 9) {
     system("cls");
     main();
-  } else {
-    system("pause");
+  } else if(aws == 8) {
+    system("cls");
+    circle();
   }
 }

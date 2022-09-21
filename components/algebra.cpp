@@ -17,15 +17,18 @@ void divisors() {
         }
 
     }
-    cout << "\n9.Exit" << endl;
+    
+    cout << "\n8. Retry" << endl;
+    cout << "9.Exit" << endl;
     cin >> aws;
 
     if (aws == 9) {
         system("cls");
         main();
-    } else {
-        system("pause");
-    }
+    } else if(aws == 8){
+        system("cls");
+        divisors();
+    } 
 }
 
 void digit() {
@@ -39,14 +42,16 @@ void digit() {
 
   cout << "\nThe result = " << result << endl;
 
-  cout << "\n9. Exit" << endl;
+  cout << "\n8. Retry" << endl;
+  cout << "9.Exit" << endl;
   cin >> aws;
 
   if (aws == 9) {
     system("cls");
     main();
-  } else {
-    system("pause");
+  } else if(aws == 8){
+    system("cls");
+    digit();
   }
 
 }
@@ -64,12 +69,16 @@ void divisorssum() {
    }
 
     cout << "\nThe result = " << sum << endl;
-    cout << "\n9. Exit" << endl;
+    cout << "\n8. Retry" << endl;
+    cout << "9.Exit" << endl;
     cin >> aws;
 
     if (aws == 9) {
         system("cls");
         main();
+    } else if(aws == 8) {
+      system("cls");
+      divisorssum();
     }
 
 }
@@ -84,12 +93,16 @@ void squarenumber() {
 
     cout << "\nThe result = " << square << endl;
 
-    cout << "\n9. Exit" << endl;
+    cout << "\n8. Retry" << endl;
+    cout << "9.Exit" << endl;
     cin >> aws;
 
     if (aws == 9) {
         system("cls");
         main();
+    } else if(aws == 8) {
+      system("cls");
+      squarenumber();
     }
 }
 
@@ -115,6 +128,7 @@ void arithmeticMean() {
   cout << "\nThe result = " << armean << endl;
   cout << endl;
 
+  cout << "8. Retry" << endl;
   cout << "9. Exit" << endl;
 
   cout << endl;
@@ -122,6 +136,10 @@ void arithmeticMean() {
   cin >> x;
 
   switch(x) {
+    case 8:
+      system("cls");
+      arithmeticMean();
+
     case 9:
      system("cls");
      main();
@@ -144,13 +162,16 @@ void weightingMean(){
   sumary = pon1 + pon2;
   operation2 = operation / sumary;
   cout << "\nWeighting result = " << operation2 << endl;
-  cout << "\n9. Exit" << endl;
+  cout << "\n8. Retry" << endl;
+  cout << "9.Exit" << endl;
   cin >> aws;
+
   if(aws == 9){
     system("cls");
     main();
-  } else {
-    system("pause");
+  } else if(aws == 8){
+    system("cls");
+    weightingMean();
   }
 }
 
@@ -174,14 +195,16 @@ void percentages() {
     operation = percentage % number;
 
     cout << "\nThe result = " << operation << endl;
-    cout << "\n9. Exit" << endl;
+    cout << "\n8. Retry" << endl;
+    cout << "9.Exit" << endl;
     cin >> aws;
 
     if (aws == 9) {
       system("cls");
       main();
-    } else {
-      system("pause");
+    } else if(aws == 8){
+      system("cls");
+      percentages();
     }
   } else if (choose == 2) {
 
@@ -197,15 +220,17 @@ void percentages() {
 
     cout << "\nThe number = " << number << endl;
 
-    cout << "\n9. Exit" << endl;
+    cout << "\n8. Retry" << endl;
+    cout << "9.Exit" << endl;
     cin >> aws;
 
     if (aws == 9) {
       system("cls");
       main();
 
-    } else {
-      system("pause");
+    } else if(aws == 8){
+      system("cls");
+      percentages();
     }
 
   }
@@ -229,20 +254,22 @@ void possibility() {
 
   cout << "\nThe result = " << favorableCases << "/" << possibleCases << " or " << operation2 << "%" << endl;
 
-  cout << "\n9. Exit" << endl;
+  cout << "\n8. Retry" << endl;
+  cout << "9.Exit" << endl;
   cin >> aws;
 
   if (aws == 9){
     system("cls");
     main();
-  } else {
-    system("pause");
+  } else if(aws == 8){
+    system("cls");
+    possibility();
   }
 
 }
 
 void factor() {
-  int number1, number2, aws, factor;
+  int number1, number2, aws, factor1;
 
   cout << "Enter two numbers!" << endl;
   cin >> number1 >> number2;
@@ -255,49 +282,57 @@ void factor() {
 
   for (int i = 1; i <= number2; i++) {
       if(number1 % i == 0 && number2 % i == 0) {
-        factor = i;
+        factor1 = i;
       }
   }
 
-  cout << "\nThe GCD is " << factor << endl;
-  cout << "\n9. Exit" << endl;
+  cout << "\nThe GCD is " << factor1 << endl;
+  cout << "\n8. Retry" << endl;
+  cout << "9.Exit" << endl;
   cin >> aws;
   if (aws == 9) {
     system("cls");
     main();
+  } else if(aws == 8) {
+    system("cls");
+    factor();
   }
 
 }
 
 void multiple() {
-  int number1, number2, aws, multiple;
+  int number1, number2, aws, multiple1;
 
   cout << "Enter two numbers!" << endl;
   cin >> number1 >> number2;
 
   if (number1 > number2) {
-    multiple = number1;
+    multiple1 = number1;
   } else {
-    multiple = number2;
+    multiple1 = number2;
   }
 
   while(1) {
 
-    if (multiple % number1 == 0 && multiple % number2 == 0) {
-      cout << "\nThe LCM is " << multiple << endl;
+    if (multiple1 % number1 == 0 && multiple1 % number2 == 0) {
+      cout << "\nThe LCM is " << multiple1 << endl;
       break;
     }
 
-    multiple++;
+    multiple1++;
 
   }
 
-  cout << "\n9. Exit" << endl;
+  cout << "\n8. Retry" << endl;
+  cout << "9.Exit" << endl;
   cin >> aws;
 
   if (aws == 9) {
     system("cls");
     main();
+  } else if(aws == 8) {
+    system("cls");
+    multiple();
   }
 
 }
@@ -314,12 +349,16 @@ void geomean() {
 
   result = sqrt(a*b);
   cout << "\nThe result = " << result << endl;
-  cout << "\n9. Exit" << endl;
+  cout << "\n8. Retry" << endl;
+  cout << "9.Exit" << endl;
   cin >> aws;
 
   if (aws == 9) {
     system("cls");
     main();
+  } else if(aws == 8) {
+    system("cls");
+    geomean();
   }
 }
 
@@ -340,12 +379,16 @@ void oddeven() {
   }
 
   cout << "\nThe number is " << type << endl;
-  cout << "\n9. Exit" << endl;
+  cout << "\n8. Retry" << endl;
+  cout << "9.Exit" << endl;
   cin >> aws;
-
+  
   if (aws == 9) {
     system("cls");
     main();
+  } else if(aws == 8) {
+    system("cls");
+    oddeven();
   }
 
 }

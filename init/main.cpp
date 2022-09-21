@@ -43,6 +43,7 @@ int main() {
       cout << "8. The sum of the digits of a number" << endl;
       cout << "9. Geometric mean" << endl;
       cout << "10. Even or Odd number" << endl;
+      cout << "\n[0] Main Menu" << endl;
       cin >> choose;
 
       if (choose == 1){
@@ -75,6 +76,9 @@ int main() {
       } else if (choose == 10) {
         system("cls");
         oddeven();
+      } else if (choose == 0) {
+        system("cls");
+        main();
       }
 
 
@@ -89,6 +93,7 @@ int main() {
       cout << "4. Diamond Area" << endl;
       cout << "5. Trapeze Area" << endl;
       cout << "6. Circle Area" << endl;
+      cout << "\n[0] Main Menu" << endl;
       cin >> alt;
       switch (alt) {
         case 1:
@@ -109,6 +114,9 @@ int main() {
         case 6:
           system("cls");
           circle();
+        case 0:
+          system("cls");
+          main();
       }
 
     case 4:
@@ -116,6 +124,7 @@ int main() {
       
       cout << "1. Percentages" << endl;
       cout << "2. Possibility" << endl;
+      cout << "\n[0] Main Menu" << endl;
       cin >> choose;
       if (choose == 1) {
         system("cls");
@@ -123,15 +132,22 @@ int main() {
       } else if(choose == 2) {
         system("cls");
         possibility();
+      } else if (choose == 0) {
+        system("cls");
+        main();
       }
     case 5:
       system("cls");
       
       cout << "1. Angle calculation" << endl;
+      cout << "\n[0] Main Menu" << endl;
       cin >> choose;
       if (choose == 1) {
         system("cls");
         angle();
+      } else if (choose == 0) {
+        system("cls");
+        main();
       }
     case 6:
       system("cls");
