@@ -7,8 +7,8 @@ using namespace std;
 void divisors() {
 
     int n, z, aws;
-
-    cout << "Enter the number you want to know his divisors!" << endl;
+    cout << "Eleven Terminal - Divisors" << endl;
+    cout << "\nEnter the number you want to know his divisors!" << endl;
     cin >> n;
 
     for(z=1; z <= n; z++){
@@ -18,8 +18,8 @@ void divisors() {
 
     }
     
-    cout << "\n8. Retry" << endl;
-    cout << "9.Exit" << endl;
+    cout << "\n[8] Retry" << endl;
+    cout << "[9] Exit" << endl;
     cin >> aws;
 
     if (aws == 9) {
@@ -34,16 +34,16 @@ void divisors() {
 void digit() {
 
   int n, result, aws;
-
-  cout << "Enter the number!" << endl;
+  cout << "Eleven Terminal - Digit" << endl;
+  cout << "\nEnter the number!" << endl;
   cin >> n;
 
   result = n * (n + 1) / 2;
 
   cout << "\nThe result = " << result << endl;
 
-  cout << "\n8. Retry" << endl;
-  cout << "9.Exit" << endl;
+  cout << "\n[8] Retry" << endl;
+  cout << "[9] Exit" << endl;
   cin >> aws;
 
   if (aws == 9) {
@@ -58,8 +58,8 @@ void digit() {
 
 void divisorssum() {
    int sum=0, aws, number, i;
-
-   cout << "Enter the number!" << endl;
+   cout << "Eleven Terminal - Sum of Divisors" << endl; 
+   cout << "\nEnter the number!" << endl;
    cin >> number;
 
    for (i = 1; i <= number; i++) {
@@ -69,8 +69,8 @@ void divisorssum() {
    }
 
     cout << "\nThe result = " << sum << endl;
-    cout << "\n8. Retry" << endl;
-    cout << "9.Exit" << endl;
+    cout << "\n[8] Retry" << endl;
+    cout << "[9] Exit" << endl;
     cin >> aws;
 
     if (aws == 9) {
@@ -85,16 +85,16 @@ void divisorssum() {
 
 void squarenumber() {
     int number, square, aws;
-
-    cout << "Enter the number!" << endl;
+    cout << "Eleven Terminal - Square Number" << endl;
+    cout << "\nEnter the number!" << endl;
     cin >> number;
 
     square = number * number;
 
     cout << "\nThe result = " << square << endl;
 
-    cout << "\n8. Retry" << endl;
-    cout << "9.Exit" << endl;
+    cout << "\n[8] Retry" << endl;
+    cout << "[9] Exit" << endl;
     cin >> aws;
 
     if (aws == 9) {
@@ -112,8 +112,8 @@ void arithmeticMean() {
   float arr[50], sum=0, armean;
 
   system("cls");
-
-  cout << "How many numbers do you want to enter?" << endl;
+  cout << "Eleven Terminal - Arithmetic Mean" << endl;
+  cout << "\nHow many numbers do you want to enter?" << endl;
   cin >> n;
   cout << endl;
   cout << "\nEnter " << n << " numbers!" << endl;
@@ -128,8 +128,8 @@ void arithmeticMean() {
   cout << "\nThe result = " << armean << endl;
   cout << endl;
 
-  cout << "8. Retry" << endl;
-  cout << "9. Exit" << endl;
+  cout << "\n[8] Retry" << endl;
+  cout << "[9] Exit" << endl;
 
   cout << endl;
 
@@ -152,8 +152,8 @@ void arithmeticMean() {
 void weightingMean(){
   int aws, num1, num2, pon1, pon2, operation, sumary;
   double operation2;
-
-  cout << "Enter 2 numbers!" << endl;
+  cout << "Eleven Terminal - Weighting Mean" << endl;
+  cout << "\nEnter 2 numbers!" << endl;
   cin >> num1 >> num2;
   cout << "\nEnter first weighting and the second!" << endl;
   cin >> pon1 >> pon2;
@@ -162,8 +162,8 @@ void weightingMean(){
   sumary = pon1 + pon2;
   operation2 = operation / sumary;
   cout << "\nWeighting result = " << operation2 << endl;
-  cout << "\n8. Retry" << endl;
-  cout << "9.Exit" << endl;
+  cout << "\n[8] Retry" << endl;
+  cout << "[9] Exit" << endl;
   cin >> aws;
 
   if(aws == 9){
@@ -179,8 +179,9 @@ void percentages() {
 
   int number, choose, percentage, aws, result;
   float operation;
-  cout << "1. The result of the percentage of a number" << endl;
-  cout << "2. Number from a result of a percentage" << endl;
+  cout << "Eleven Terminal - Percentages" << endl;
+  cout << "\n[1] The result of the percentage of a number" << endl;
+  cout << "[2] Number from a result of a percentage" << endl;
   cin >> choose;
 
   if (choose == 1) {
@@ -195,8 +196,8 @@ void percentages() {
     operation = percentage % number;
 
     cout << "\nThe result = " << operation << endl;
-    cout << "\n8. Retry" << endl;
-    cout << "9.Exit" << endl;
+    cout << "\n[8] Retry" << endl;
+    cout << "[9] Exit" << endl;
     cin >> aws;
 
     if (aws == 9) {
@@ -220,8 +221,8 @@ void percentages() {
 
     cout << "\nThe number = " << number << endl;
 
-    cout << "\n8. Retry" << endl;
-    cout << "9.Exit" << endl;
+    cout << "\n[8] Retry" << endl;
+    cout << "[9] Exit" << endl;
     cin >> aws;
 
     if (aws == 9) {
@@ -242,8 +243,8 @@ void percentages() {
 void possibility() {
 
   int operation1, operation2, favorableCases, possibleCases, aws;
-
-  cout << "Enter Favorable cases!" <<  endl;
+  cout << "Eleven Terminal - Possibility" << endl;
+  cout << "\nEnter Favorable cases!" <<  endl;
   cin >> favorableCases;
 
   cout << "\nEnter Possible cases!" << endl;
@@ -254,8 +255,8 @@ void possibility() {
 
   cout << "\nThe result = " << favorableCases << "/" << possibleCases << " or " << operation2 << "%" << endl;
 
-  cout << "\n8. Retry" << endl;
-  cout << "9.Exit" << endl;
+  cout << "\n[8] Retry" << endl;
+  cout << "[9] Exit" << endl;
   cin >> aws;
 
   if (aws == 9){
@@ -270,8 +271,8 @@ void possibility() {
 
 void factor() {
   int number1, number2, aws, factor1;
-
-  cout << "Enter two numbers!" << endl;
+  cout << "Eleven Terminal - Factor" << endl;
+  cout << "\nEnter two numbers!" << endl;
   cin >> number1 >> number2;
 
   if (number2 > number1) {
@@ -287,8 +288,8 @@ void factor() {
   }
 
   cout << "\nThe GCD is " << factor1 << endl;
-  cout << "\n8. Retry" << endl;
-  cout << "9.Exit" << endl;
+  cout << "\n[8] Retry" << endl;
+  cout << "[9] Exit" << endl;
   cin >> aws;
   if (aws == 9) {
     system("cls");
@@ -302,8 +303,8 @@ void factor() {
 
 void multiple() {
   int number1, number2, aws, multiple1;
-
-  cout << "Enter two numbers!" << endl;
+  cout << "Eleven Terminal - Multiple" << endl;
+  cout << "\nEnter two numbers!" << endl;
   cin >> number1 >> number2;
 
   if (number1 > number2) {
@@ -323,8 +324,8 @@ void multiple() {
 
   }
 
-  cout << "\n8. Retry" << endl;
-  cout << "9.Exit" << endl;
+  cout << "\n[8] Retry" << endl;
+  cout << "[9] Exit" << endl;
   cin >> aws;
 
   if (aws == 9) {
@@ -340,8 +341,8 @@ void multiple() {
 void geomean() {
 
   int a, b, result, aws;
-
-  cout << "Enter the first number" << endl;
+  cout << "Eleven Terminal - Geometric mean" << endl;
+  cout << "\nEnter the first number" << endl;
   cin >> a;
 
   cout << "\nEnter the second number" << endl;
@@ -349,8 +350,8 @@ void geomean() {
 
   result = sqrt(a*b);
   cout << "\nThe result = " << result << endl;
-  cout << "\n8. Retry" << endl;
-  cout << "9.Exit" << endl;
+  cout << "\n[8] Retry" << endl;
+  cout << "[9] Exit" << endl;
   cin >> aws;
 
   if (aws == 9) {
@@ -366,8 +367,8 @@ void oddeven() {
 
   int number, aws;
   string type;
-
-  cout << "Enter a number" << endl;
+  cout << "Eleven Terminal - Number type" << endl;
+  cout << "\nEnter a number" << endl;
   cin >> number;
 
   if (number % 2 == 0) {
@@ -379,8 +380,8 @@ void oddeven() {
   }
 
   cout << "\nThe number is " << type << endl;
-  cout << "\n8. Retry" << endl;
-  cout << "9.Exit" << endl;
+  cout << "\n[8] Retry" << endl;
+  cout << "[9] Exit" << endl;
   cin >> aws;
   
   if (aws == 9) {

@@ -11,20 +11,22 @@ void triangleArea(){
 
 
   system("cls");
+  cout << "Eleven Terminal - Triangle Area" << endl;
   cout << "Enter what number do you want!" << endl;
-  cout << "1. Triangle Area" << endl;
-  cout << "2. Isosceles Triangle Area" << endl;
-  cout << "3. Equilateral Triangle Area" << endl;
-  cout << "4. Right-Angle Triangle Area" << endl;
+  cout << "\n[1] Triangle Area" << endl;
+  cout << "[2] Isosceles Triangle Area" << endl;
+  cout << "[3] Equilateral Triangle Area" << endl;
+  cout << "[4] Right-Angle Triangle Area" << endl;
   cout << endl;
-  cout << "9. Exit" << endl;
+  cout << "[9] Exit" << endl;
   cout << endl;
   cin >> c;
 
   switch (c) {
     case 1:
       system("cls");
-      cout << "Enter base value!" << endl;
+      
+      cout << "\nEnter base value!" << endl;
       cin >> base;
       cout << endl;
       cout << "Enter height value!" << endl;
@@ -34,7 +36,7 @@ void triangleArea(){
       operation = base * height / 2;
       cout << "The result = " << operation << endl;
       
-      cout << "\n9. Exit" << endl;
+      cout << "\n[9] Exit" << endl;
       cout << endl;
       cin >> awv;
       if (awv == 9){
@@ -53,7 +55,7 @@ void triangleArea(){
       operation = base * height / 2;
       cout << "The result = " << operation << endl;
       cout << endl;
-      cout << "9. Exit" << endl;
+      cout << "[9] Exit" << endl;
       cout << endl;
       cin >> awv;
       if (awv = 9){
@@ -69,7 +71,7 @@ void triangleArea(){
       cout << "The result = " << operation << endl;
 
       cout << endl;
-      cout << "9. Exit" << endl;
+      cout << "[9] Exit" << endl;
       cout << endl;
       cin >> awv;
       if (awv = 9){
@@ -90,7 +92,7 @@ void triangleArea(){
       operation = cat1 * cat2 / 2;
       cout << "The result = " << operation << endl;
       cout << endl;
-      cout << "9. Exit" << endl;
+      cout << "[9] Exit" << endl;
       cout << endl;
       cin >> awv;
       if (awv = 9){
@@ -108,15 +110,16 @@ void squareArea(){
 
   int side, operation, aws;
   system("cls");
-  cout << "Enter side value" << endl;
+  cout << "Eleven Terminal - Square Area" << endl;
+  cout << "\nEnter side value" << endl;
   cin >> side;
 
   operation = side * side;
   cout << endl;
   cout << "The result = " << operation << endl;
   
-  cout << "\n8. Retry" << endl;
-  cout << "9. Exit" << endl;
+  cout << "\n[8] Retry" << endl;
+  cout << "[9] Exit" << endl;
   cin >> aws;
   if (aws == 9) {
     system("cls");
@@ -132,8 +135,8 @@ void rightangleArea(){
   int side1, side2, aws, operation;
 
   system("cls");
-
-  cout << "Enter short side value" << endl;
+  cout << "Eleven Terminal - Rightangle Area" << endl;
+  cout << "\nEnter short side value" << endl;
   cin >> side1;
   cout << endl;
   cout << "Enter long side value" << endl;
@@ -143,8 +146,8 @@ void rightangleArea(){
   operation = side1 * side2;
 
   cout << "The result = " << operation << endl;
-  cout << "\n8. Retry" << endl;
-  cout << "9. Exit" << endl;
+  cout << "\n[8] Retry" << endl;
+  cout << "[9] Exit" << endl;
   cin >> aws;
   if (aws == 9) {
     system("cls");
@@ -160,7 +163,7 @@ void diamondArea(){
   int diagonal1, diagonal2, aws, operation;
 
   system("cls");
-
+  cout << "Eleven Terminal - Diamond Area" << endl;
   cout << "Enter first diagonal value" << endl;
   cin >> diagonal1;
   cout << endl;
@@ -169,8 +172,8 @@ void diamondArea(){
   cout << endl;
   operation = diagonal1 * diagonal2 / 2;
   cout << "The result = " << operation << endl;
-  cout << "\n8. Retry" << endl;
-  cout << "9. Exit" << endl;
+  cout << "\n[8] Retry" << endl;
+  cout << "[9] Exit" << endl;
   cin >> aws;
   if (aws == 9) {
     system("cls");
@@ -185,7 +188,7 @@ void trapezeArea(){
   int baseS, baseL, aws, height, operation;
 
   system("cls");
-
+  cout << "Eleven Terminal - Trapeze Area" << endl;
   cout << "Enter long base value" << endl;
   cin >> baseL;
   cout << endl;
@@ -199,8 +202,8 @@ void trapezeArea(){
   operation = ((baseL + baseS) * height) / 2;
 
   cout << "The result = " << operation << endl;
-  cout << "\n8. Retry" << endl;
-  cout << "9. Exit" << endl;
+  cout << "\n[8] Retry" << endl;
+  cout << "[9] Exit" << endl;
   cin >> aws;
   if (aws == 9) {
     system("cls");
@@ -217,7 +220,7 @@ void angle() {
 
   int angle1, angle2, angle3, aws;
   string type;
-
+  cout << "Eleven Terminal - Angle" << endl;
   cout << "Enter first angle measure!" << endl;
   cin >> angle1;
 
@@ -243,8 +246,8 @@ void angle() {
 
   cout << "\nThe result = " << angle3 << " and " << type << endl;
   
-  cout << "\n8. Retry" << endl;
-  cout << "9. Exit" << endl;
+  cout << "\n[8] Retry" << endl;
+  cout << "[9] Exit" << endl;
   cin >> aws;
   if (aws == 9) {
     system("cls");
@@ -261,14 +264,15 @@ void circle() {
 
   int r, aws;
   const double pi = 3.14;
+  cout << "Eleven Terminal - Circle Area" << endl;
   cout << "Enter the radius of the circle!" << endl;
   cin >> r;
   const double result = 2 * r * pi;
 
   cout << "\nThe result = " << result << endl;
 
-  cout << "\n8. Retry" << endl;
-  cout << "9. Exit" << endl;
+  cout << "\n[8] Retry" << endl;
+  cout << "[9] Exit" << endl;
   cin >> aws;
   if (aws == 9) {
     system("cls");

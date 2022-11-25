@@ -12,18 +12,18 @@ int main() {
   int choose;
 
   cout << "Welcome to Eleven Terminal!" << endl;
-  cout << "\n1. Clasic calculator" << endl;
-  cout << "2. Algebra calculations" << endl;
-  cout << "3. Geometric Area" << endl;
-  cout << "4. Percent calculation" << endl;
-  cout << "5. Geometry calculation" << endl;
-  cout << "\n6. Info" << endl;
-  cout << "7. Tutorials" << endl;
-  cout << "8. About" << endl;
-  cout << "9. Creator" << endl;
-  cout << "10. GitHub" << endl;
-  cout << "11. Updates" << endl;
-
+  cout << "\n[1] Clasic calculator" << endl;
+  cout << "[2] Algebra calculations" << endl;
+  cout << "[3] Geometric Area" << endl;
+  cout << "[4] Percent calculation" << endl;
+  cout << "[5] Geometry calculation" << endl;
+  cout << "\n[6] Info" << endl;
+  cout << "[7] Tutorials" << endl;
+  cout << "[8] About" << endl;
+  cout << "[9] Creator" << endl;
+  cout << "[10] GitHub" << endl;
+  cout << "[11] Updates" << endl;
+  cout << endl;
   cin >> choose;
 
   switch (choose) {
@@ -33,17 +33,19 @@ int main() {
     case 2:
       
       system("cls");
-      cout << "1. Arithmetic mean" << endl;
-      cout << "2. Weighting mean" << endl;
-      cout << "3. Divisors of a number" << endl;
-      cout << "4. Sum of divisors" << endl;
-      cout << "5. The square of a number" << endl;
-      cout << "6. Greatest common factor" << endl;
-      cout << "7. The least common multiple" << endl;
-      cout << "8. The sum of the digits of a number" << endl;
-      cout << "9. Geometric mean" << endl;
-      cout << "10. Even or Odd number" << endl;
-      cout << "\n[0] Main Menu" << endl;
+      cout << "Eleven Terminal - Algebra calculations" << endl;
+      cout << "\n[1] Arithmetic mean" << endl;
+      cout << "[2] Weighting mean" << endl;
+      cout << "[3] Divisors of a number" << endl;
+      cout << "[4] Sum of divisors" << endl;
+      cout << "[5] The square of a number" << endl;
+      cout << "[6] Greatest common factor" << endl;
+      cout << "[7] The least common multiple" << endl;
+      cout << "[8] The sum of the digits of a number" << endl;
+      cout << "[9] Geometric mean" << endl;
+      cout << "[10] Even or Odd number" << endl;
+      cout << "\n[0] Menu" << endl;
+      cout << endl;
       cin >> choose;
 
       if (choose == 1){
@@ -86,14 +88,15 @@ int main() {
     case 3:
       int alt;
       system("cls");
-
-      cout << "1. Triangle Area" << endl;
-      cout << "2. Square Area" << endl;
-      cout << "3. Right angle Area" << endl;
-      cout << "4. Diamond Area" << endl;
-      cout << "5. Trapeze Area" << endl;
-      cout << "6. Circle Area" << endl;
-      cout << "\n[0] Main Menu" << endl;
+      cout << "Eleven Terminal - Geometric Area" << endl;
+      cout << "\n[1] Triangle Area" << endl;
+      cout << "[2] Square Area" << endl;
+      cout << "[3] Right angle Area" << endl;
+      cout << "[4] Diamond Area" << endl;
+      cout << "[5] Trapeze Area" << endl;
+      cout << "[6] Circle Area" << endl;
+      cout << "\n[9] Menu" << endl;
+      cout << endl;
       cin >> alt;
       switch (alt) {
         case 1:
@@ -114,17 +117,18 @@ int main() {
         case 6:
           system("cls");
           circle();
-        case 0:
+        case 9:
           system("cls");
           main();
       }
 
     case 4:
       system("cls");
-      
-      cout << "1. Percentages" << endl;
-      cout << "2. Possibility" << endl;
+      cout << "Eleven Terminal - Percent calculation" << endl;
+      cout << "\n[1] Percentages" << endl;
+      cout << "[2] Possibility" << endl;
       cout << "\n[0] Main Menu" << endl;
+      cout << endl;
       cin >> choose;
       if (choose == 1) {
         system("cls");
@@ -138,9 +142,10 @@ int main() {
       }
     case 5:
       system("cls");
-      
-      cout << "1. Angle calculation" << endl;
+      cout << "Eleven Terminal - Geometry calculation" << endl;
+      cout << "\n[1] Angle calculation" << endl;
       cout << "\n[0] Main Menu" << endl;
+      cout << endl;
       cin >> choose;
       if (choose == 1) {
         system("cls");
