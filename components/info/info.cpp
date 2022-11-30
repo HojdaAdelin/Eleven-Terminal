@@ -3,6 +3,8 @@
 
 using namespace std;
 
+
+/*
 void about(){
 
   int aws;
@@ -31,16 +33,30 @@ void about(){
   }
 
 }
+*/
+
 
 void creator(){
 
   int aws;
 
   system("cls");
-  cout << "Eleven Terminal - Creator" << endl;
+  cout << "Eleven Terminal - About Creator" << endl;
   cout << "\nCreator: H. Adelin" << endl;
   cout << "Age[when the application was created]: 14" << endl;
   cout << "Country of origion: Romania" << endl;
+  cout << endl;
+  cout << "Eleven Terminal - About Application" << endl;
+  cout << "\nThis app was created for simplify calculation." << endl;
+  cout << "Country of origin: Romania" << endl;
+  cout << "Date of creation: November, 2022" << endl;
+  cout << "Version: 1.0.1" << endl;
+  cout << "Hours of work: 16 hours" << endl;
+  cout << "Building ID: iRe90996fHiK0871" << endl;
+  cout << "Version ID: 2.5400GP" << endl;
+  cout << "URank: 0.740" << endl;
+  cout << "Operation Result Prediction: above 9.11" << endl;
+  cout << "Serial Number: Hj3H0050" << endl;
   cout << endl;
   cout << "[9] Exit" << endl;
   cin >> aws;
@@ -78,9 +94,9 @@ void updates(){
 
   system("cls");
   cout << "Eleven Terminal - Updates" << endl;
-  cout << "Current version: 1.0.1" << endl;
+  cout << "Current version: 1.0.2" << endl;
   cout << "\nUpdate news: " << endl;
-  cout << "\n-Major Menu change\n-Update link changed" << endl;
+  cout << "\n-New menu color\n-New menu item [Settings]\n-Color changer\n-Color config" << endl;
   cout << "\n[7] Link for updates" << endl;
   cout << "[9] Exit" << endl;
 

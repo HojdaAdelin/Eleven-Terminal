@@ -1,16 +1,23 @@
 #include <iostream>
 #include <math.h>
+#include <windows.h>
+
 #include "../components/calculator.h"
 #include "../components/algebra.h"
 #include "../components/info/info.h"
 #include "../components/geometry.h"
+#include "../components/Settings/settings.h"
+
 
 using namespace std;
 
 int main() {
 
-  int choose;
+  loadconfigcolor();
+  //system("Color 01");
 
+  int choose;
+  
   cout << "Welcome to Eleven Terminal!" << endl;
   cout << "\n[1] Clasic calculator" << endl;
   cout << "[2] Algebra calculations" << endl;
@@ -20,9 +27,9 @@ int main() {
   cout << "\n[6] Info" << endl;
   cout << "[7] Tutorials" << endl;
   cout << "[8] About" << endl;
-  cout << "[9] Creator" << endl;
-  cout << "[10] GitHub" << endl;
-  cout << "[11] Updates" << endl;
+  cout << "[9] GitHub" << endl;
+  cout << "[10] Updates" << endl;
+  cout << "[11] Settings" << endl;
   cout << endl;
   cin >> choose;
 
@@ -162,16 +169,16 @@ int main() {
       tutorials();
     case 8:
       system("cls");
-      about();
+      creator();
     case 9:
       system("cls");
-      creator();
+      gitHub();
     case 10:
       system("cls");
-      gitHub();
+      updates();
     case 11:
       system("cls");
-      updates();
+      settin();
   }
   return 0;
 }

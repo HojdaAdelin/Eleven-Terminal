@@ -1,1 +1,1 @@
-g++ -o ElevenTerminal.exe init/main.cpp components/calculator.cpp components/algebra.cpp components/geometry.cpp components/info/info.cpp
+g++ -o ElevenTerminal.exe init/main.cpp components/calculator.cpp components/algebra.cpp components/geometry.cpp components/info/info.cpp components/Settings/settings.cpp
