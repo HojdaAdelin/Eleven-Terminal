@@ -267,7 +267,7 @@ void circle() {
   cout << "Eleven Terminal - Circle Area" << endl;
   cout << "Enter the radius of the circle!" << endl;
   cin >> r;
-  const double result = 2 * r * pi;
+  const double result = r * r * pi;
 
   cout << "\nThe result = " << result << endl;
 
@@ -281,4 +281,124 @@ void circle() {
     system("cls");
     circle();
   }
+}
+
+void t30() {
+
+  int vall = 2;
+  int hy, side;
+  int aws;
+
+  cout << "Eleven Terminal - 30 angle theorem" << endl;
+  cout << "\nEnter hypotenuse value" << endl;
+  cin >> hy;
+
+  side = hy / vall;
+
+  cout << "\nThe side opposed to the 30 angle is " << side << endl;
+  cout << "\n[8] Retry" << endl;
+  cout << "[9] Exit" << endl;
+
+  cin >> aws;
+
+  if (aws == 8) {
+      system("cls");
+      t30();
+  } else if (aws == 9) {
+      system("cls");
+      main();
+
+  }
+}
+
+void heightTheoreme() {
+
+  int side1, side2, hy;
+  int aws;
+  string hg;
+
+  cout << "Eleven Terminal - Height Theoreme" << endl;
+  cout << "\nEnter side1 and side2 of the triangle" << endl;
+  cin >> side1 >> side2;
+  cout << "\nEnter the hypotenuse value" << endl;
+  cin >> hy;
+
+  hg = (side1 * side2) / hy;
+
+  cout << "\nThe height is " << hg << endl;
+  cout << "\n[8] Retry" << endl;
+  cout << "[9] Exit" << endl;
+  cin >> aws;
+
+  if (aws == 8) {
+    system("cls");
+    heightTheoreme();
+  } else if (aws == 9) {
+    system("cls");
+    main();
+  }
+
+
+}
+
+void Pythagoras() {
+
+  float side1, side2, hy;
+  int aws, ch;
+  cout << "Eleven Terminal - Pythagoras theorem" << endl;
+
+  cout << "\n[1] For side" << endl;
+  cout << "[2] For hypotenuse" << endl;
+  cin >> ch;
+
+  if (ch == 1) {
+    system("cls");
+    cout << "Enter the 2nd side value" << endl;
+    cin >> side2;
+
+    cout << "\nEnter the hypotenuse value" << endl;
+    cin >> hy;
+
+    side1 = sqrt((hy*hy) - (side2*side2));
+
+    cout << "\nThe side value is " << side1 << endl;
+    cout << "\n[8] Retry" << endl;
+    cout << "[9] Exit" << endl;
+
+    cin >> aws;
+
+    if (aws == 8) {
+      system("cls");
+      Pythagoras();
+    } else if (aws == 9) {
+      system("cls");
+      main();
+    }
+
+  } else if (ch == 2) {
+
+    system("cls");
+    cout << "Enter the side1 and side2 value" << endl;
+    cin >> side1 >> side2;
+
+    hy = sqrt((side1*side1) + (side2*side2));
+
+    cout << "\nThe hypotenuse value is " << hy << endl;
+    cout << "\n[8] Retry" << endl;
+    cout << "[9] Exit" << endl;
+
+    cin >> aws;
+
+    if (aws == 8) {
+      system("cls");
+      Pythagoras();
+    } else if (aws == 9) {
+      system("cls");
+      main();
+    }
+
+  }
+
+
+
 }

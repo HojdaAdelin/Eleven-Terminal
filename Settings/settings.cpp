@@ -14,7 +14,8 @@ void settin(){
 
     cout << "Eleven Terminal - Settings" << endl;
     cout << "\n[1] Color changer" << endl;
-    cout << "[9] Exit" << endl;
+    cout << "[2] Menu changer" << endl;
+    cout << "\n[9] Exit" << endl;
 
     cout << endl;
 
@@ -26,6 +27,9 @@ void settin(){
     } else if(aws == 9) {
         system("cls");
         main();
+    } else if (aws == 2) {
+        system("cls");
+        menu();
     }
 
 }
@@ -41,7 +45,7 @@ void color() {
     cout << "[3] Red text" << endl;
     cout << "[4] Blue text" << endl;
     cout << "[5] Black text & white bg" << endl;
-    cout << "\n[8] Main Menu" << endl;
+    cout << "\n[8] Menu" << endl;
     cout << endl;
     cin >> colorcfg;
 
@@ -75,7 +79,7 @@ void color() {
 
 void configcolor(){
     
-    ofstream readingConfig("config.cfg");
+    ofstream readingConfig("color.cfg");
 
     readingConfig << colorcfg << endl;
 
@@ -88,7 +92,7 @@ void configcolor(){
 void loadconfigcolor() {
     int loadcolor;
 
-    ifstream loadingConfig("config.cfg");
+    ifstream loadingConfig("color.cfg");
 
     loadingConfig >> loadcolor;
 

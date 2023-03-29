@@ -13,3 +13,4 @@ void multiple();
 void factor();
 void geomean();
 void oddeven();
+void Gauss();

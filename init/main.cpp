@@ -2,34 +2,25 @@
 #include <math.h>
 #include <windows.h>
 
-#include "../components/calculator.h"
+#include "../Calculator/calculator.h"
 #include "../components/algebra.h"
 #include "../components/info/info.h"
 #include "../components/geometry.h"
-#include "../components/Settings/settings.h"
-
-
+#include "../Settings/settings.h"
 using namespace std;
 
 int main() {
 
+
+  // Color atribute
   loadconfigcolor();
   //system("Color 01");
-
+  
   int choose;
   
-  cout << "Welcome to Eleven Terminal!" << endl;
-  cout << "\n[1] Clasic calculator" << endl;
-  cout << "[2] Algebra calculations" << endl;
-  cout << "[3] Geometric Area" << endl;
-  cout << "[4] Percent calculation" << endl;
-  cout << "[5] Geometry calculation" << endl;
-  cout << "\n[6] Info" << endl;
-  cout << "[7] Tutorials" << endl;
-  cout << "[8] About" << endl;
-  cout << "[9] GitHub" << endl;
-  cout << "[10] Updates" << endl;
-  cout << "[11] Settings" << endl;
+  // Menu atribute
+  load_menu();
+  
   cout << endl;
   cin >> choose;
 
@@ -51,6 +42,7 @@ int main() {
       cout << "[8] The sum of the digits of a number" << endl;
       cout << "[9] Geometric mean" << endl;
       cout << "[10] Even or Odd number" << endl;
+      cout << "[11] Gauss sum" << endl;
       cout << "\n[0] Menu" << endl;
       cout << endl;
       cin >> choose;
@@ -85,6 +77,9 @@ int main() {
       } else if (choose == 10) {
         system("cls");
         oddeven();
+      } else if (choose == 11) {
+        system("cls");
+        Gauss();
       } else if (choose == 0) {
         system("cls");
         main();
@@ -92,7 +87,7 @@ int main() {
 
 
 
-    case 3:
+    case 5:
       int alt;
       system("cls");
       cout << "Eleven Terminal - Geometric Area" << endl;
@@ -129,7 +124,7 @@ int main() {
           main();
       }
 
-    case 4:
+    case 3:
       system("cls");
       cout << "Eleven Terminal - Percent calculation" << endl;
       cout << "\n[1] Percentages" << endl;
@@ -147,10 +142,13 @@ int main() {
         system("cls");
         main();
       }
-    case 5:
+    case 6:
       system("cls");
       cout << "Eleven Terminal - Geometry calculation" << endl;
       cout << "\n[1] Angle calculation" << endl;
+      cout << "[2] T30 theorem" << endl;
+      cout << "[3] Height theorem" << endl;
+      cout << "[4] Pythagoras theorem" << endl;
       cout << "\n[0] Main Menu" << endl;
       cout << endl;
       cin >> choose;
@@ -160,25 +158,42 @@ int main() {
       } else if (choose == 0) {
         system("cls");
         main();
+      } else if (choose == 2) {
+        system("cls");
+        t30();
+      } else if (choose == 3) {
+        system("cls");
+        heightTheoreme();
+      } else if (choose == 4) {
+        system("cls");
+        Pythagoras();
       }
-    case 6:
+    case 4:
       system("cls");
-      info();
+      cout << "Eleven Terminal - Complex calculations" << endl;
+
     case 7:
       system("cls");
-      tutorials();
+      info();
     case 8:
       system("cls");
-      creator();
+      tutorials();
     case 9:
       system("cls");
-      gitHub();
+      creator();
     case 10:
       system("cls");
       updates();
     case 11:
       system("cls");
       settin();
+    
+    default:
+      system("cls");
+      cout << "!  Enter a valid option  !" << endl;
+      cout << endl;
+      main();
+      break;
   }
   return 0;
 }

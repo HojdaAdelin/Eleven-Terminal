@@ -393,3 +393,31 @@ void oddeven() {
   }
 
 }
+
+void Gauss(){
+
+  int main_num, process, aw;
+
+  cout << "Eleven Terminal - Gauss sum" << endl;
+  cout << "Rule: This work only for 1+2+3+...+X (x = random number)" << endl;
+
+  cout << "\nEnter the last number from row" << endl;
+  cin >> main_num;
+  process = (main_num * (main_num + 1)) / 2;
+
+  cout << "\nThe sum = " << process << endl;
+  cout << "\n[8] Retry" << endl;
+  cout << "[9] Exit" << endl;
+  cin >> aw;
+  if (aw == 8){
+
+    system("cls");
+    Gauss();
+
+  } else if (aw == 9) {
+
+    system("cls");
+    main();
+
+  }
+}

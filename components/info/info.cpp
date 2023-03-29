@@ -3,39 +3,6 @@
 
 using namespace std;
 
-
-/*
-void about(){
-
-  int aws;
-
-  system("cls");
-  cout << "Eleven Terminal - About" << endl;
-  cout << "\nThis app was created for simplify calculation." << endl;
-  cout << "Country of origin: Romania" << endl;
-  cout << "Date of creation: November, 2022" << endl;
-  cout << "Version: 1.0.1" << endl;
-  cout << "Hours of work: 16 hours" << endl;
-  cout << "Building ID: iRe90996fHiK0871" << endl;
-  cout << "Version ID: 2.5400GP" << endl;
-  cout << "URank: 0.740" << endl;
-  cout << "Operation Result Prediction: above 9.11" << endl;
-  cout << "Serial Number: Hj3H0050" << endl;
-  cout << endl;
-
-  cout << "[9] Exit" << endl;
-  cin >> aws;
-
-  switch (aws) {
-    case 9:
-      system("cls");
-      main();
-  }
-
-}
-*/
-
-
 void creator(){
 
   int aws;
@@ -50,30 +17,14 @@ void creator(){
   cout << "\nThis app was created for simplify calculation." << endl;
   cout << "Country of origin: Romania" << endl;
   cout << "Date of creation: November, 2022" << endl;
-  cout << "Version: 1.0.1" << endl;
-  cout << "Hours of work: 16 hours" << endl;
-  cout << "Building ID: iRe90996fHiK0871" << endl;
-  cout << "Version ID: 2.5400GP" << endl;
-  cout << "URank: 0.740" << endl;
-  cout << "Operation Result Prediction: above 9.11" << endl;
-  cout << "Serial Number: Hj3H0050" << endl;
+  cout << "Version: 2.0 BETA" << endl;
+  cout << "Hours of work: 22 hours" << endl;
+  cout << "Building ID: iRe90996fH2K0000" << endl;
+  cout << "Version ID: 2.0GX" << endl;
+  cout << "URank: 0.820" << endl;
+  cout << "Operation Result Prediction: above 9.30" << endl;
+  cout << "Serial Number: 2XDDL500" << endl;
   cout << endl;
-  cout << "[9] Exit" << endl;
-  cin >> aws;
-
-  switch (aws) {
-    case 9:
-      system("cls");
-      main();
-  }
-
-}
-
-void gitHub(){
-
-  int aws;
-
-  system("cls");
   cout << "Eleven Terminal - GitHub" << endl;
   cout << "\nLink: github.com/HojdaAdelin" << endl;
   cout << endl;
@@ -94,9 +45,9 @@ void updates(){
 
   system("cls");
   cout << "Eleven Terminal - Updates" << endl;
-  cout << "Current version: 1.0.2" << endl;
+  cout << "Current version: 2.0 BETA" << endl;
   cout << "\nUpdate news: " << endl;
-  cout << "\n-New menu color\n-New menu item [Settings]\n-Color changer\n-Color config" << endl;
+  cout << "\n-Exit button in calculator\n-Source update\n-Gauss sum\n-New submenu\n-New menu looks\n-Added tutorial submenu\n-T30 theorem\n-Height theorem\n-Pythagoras theorem\n-In Settings tab added new submenu (Menu changer)\n-Config for Menu Changer\n-Bugs fixed" << endl;
   cout << "\n[7] Link for updates" << endl;
   cout << "[9] Exit" << endl;
 
@@ -127,7 +78,11 @@ void tutorials() {
   int aws;
   
   cout << "Eleven Terminal - Tutorials" << endl;
-  cout << "There is nothing here for now." << endl;
+  
+  cout << "\n1. Eleven Terminal - Calculator ex: 2+2; 4*120" << endl;
+  cout << "2. Eleven Terminal - Algebra calculations ex:\n-1+2+3+...+50\n-2+4/2\n-SQRT(2*10)" << endl;
+
+
   cout << "\n[9] Exit" << endl;
   cin >> aws;
   if (aws == 9) {
@@ -146,6 +101,7 @@ void info(){
   cout << "[3] Geometric area" << endl;
   cout << "[4] Percent calculation" << endl;
   cout << "[5] Geometry calculation" << endl;
+  cout << "\n[9] Exit" << endl;
   cin >> choose;
 
   switch (choose)
@@ -237,6 +193,10 @@ void info(){
       main();
     }
     
+    break;
+  case 9:
+    system("cls");
+    main();
     break;
   default:
     system("cls");
