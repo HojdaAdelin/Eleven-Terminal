@@ -10,4 +10,6 @@ Eleven Terminal have a lot of functionality easy to use and 100% free.
 
 -algebraic calculations
 
--simple config
+-G++ project
+
+-Menu configure & Color configure
