@@ -17,9 +17,9 @@ void creator(){
   cout << "\nThis app was created for simplify calculation." << endl;
   cout << "Country of origin: Romania" << endl;
   cout << "Date of creation: November, 2022" << endl;
-  cout << "Version: 2.0 BETA" << endl;
+  cout << "Version: 2.0" << endl;
   cout << "Hours of work: 22 hours" << endl;
-  cout << "Building ID: iRe90996fH2K0000" << endl;
+  cout << "Building ID: iRe902K60fH2K0000" << endl;
   cout << "Version ID: 2.0GX" << endl;
   cout << "URank: 0.820" << endl;
   cout << "Operation Result Prediction: above 9.30" << endl;
@@ -45,9 +45,9 @@ void updates(){
 
   system("cls");
   cout << "Eleven Terminal - Updates" << endl;
-  cout << "Current version: 2.0 BETA" << endl;
+  cout << "Current version: 2.0" << endl;
   cout << "\nUpdate news: " << endl;
-  cout << "\n-Exit button in calculator\n-Source update\n-Gauss sum\n-New submenu\n-New menu looks\n-Added tutorial submenu\n-T30 theorem\n-Height theorem\n-Pythagoras theorem\n-In Settings tab added new submenu (Menu changer)\n-Config for Menu Changer\n-Bugs fixed" << endl;
+  cout << "\n-Source update\n-New copyright rule\n-New colors\n-Bugs fixed" << endl;
   cout << "\n[7] Link for updates" << endl;
   cout << "[9] Exit" << endl;
 

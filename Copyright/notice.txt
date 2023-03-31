@@ -1,0 +1,10 @@
+Copyright (c) 2022 HojdaAdelin
+
+For all developers that use this source for new apps or similar apps with
+Eleven-Terminal needs to specify the original author/s of this open 
+source project.
+To respect the author/s you must include a "notice.txt" in your project
+like this file and include the "License.txt" from this project.
+
+For peoples that don't respect this notice will get a warning then a 
+request to cancel the project.
