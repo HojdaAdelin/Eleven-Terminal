@@ -150,6 +150,7 @@ int main() {
       cout << "[2] T30 theorem" << endl;
       cout << "[3] Height theorem" << endl;
       cout << "[4] Pythagoras theorem" << endl;
+      cout << "[5] Side theorem" << endl;
       cout << "\n[0] Main Menu" << endl;
       cout << endl;
       cin >> choose;
@@ -168,6 +169,9 @@ int main() {
       } else if (choose == 4) {
         system("cls");
         Pythagoras();
+      } else if (choose == 5) {
+        system("cls");
+        side();
       }
     case 4:
       system("cls");

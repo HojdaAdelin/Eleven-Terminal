@@ -48,7 +48,7 @@ void updates(){
   cout << "Eleven Terminal - Updates" << endl;
   cout << "Current version: 2.045" << endl;
   cout << "\nUpdate news: " << endl;
-  cout << "\n-Current date in menu\n-Bugs report\n-Links redirect\n-Config for date" << endl;
+  cout << "\n-Current date in menu\n-Bugs report\n-Links redirect\n-Config for date\n-Side theorem" << endl;
   cout << "\n[7] Open updates" << endl;
   cout << "[8] Open bugs report" << endl;
   cout << "[9] Exit" << endl;

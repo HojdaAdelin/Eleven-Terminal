@@ -11,3 +11,4 @@ int main();
 void t30();
 void heightTheoreme();
 void Pythagoras();
+void side();

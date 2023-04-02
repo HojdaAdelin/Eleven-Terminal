@@ -402,3 +402,32 @@ void Pythagoras() {
 
 
 }
+
+void side() {
+
+  int pr, aws, sideC, hy;
+
+  cout << "Eleven Terminal - Side theorem" << endl;
+  cout << "\nEnter the proiection of the side value" << endl;
+  cin >> pr;
+  cout << "\nEnter the hypotenuse value" << endl;
+  cin >> hy;
+
+  sideC = sqrt(pr * hy);
+
+  cout << "\nThe side value = " << sideC << endl;
+  cout << "\n[8] Retry" << endl;
+  cout << "[9] Exit" << endl;
+
+  cin >> aws;
+
+  if (aws == 8) {
+    system("cls");
+    side();
+  } else if (aws == 9) {
+    system("cls");
+    main();
+  }
+  
+
+}
