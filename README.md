@@ -14,6 +14,7 @@ Eleven Terminal have a lot of functionality easy to use and 100% free.
 
 -Menu configure & Color configure
 
+-Current date display
 
 # Terminal Menu
 
