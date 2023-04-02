@@ -7,6 +7,7 @@
 #include "../components/info/info.h"
 #include "../components/geometry.h"
 #include "../Settings/settings.h"
+
 using namespace std;
 
 int main() {

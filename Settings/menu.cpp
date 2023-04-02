@@ -1,7 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include "settings.h"
-
+#include "../Time/time.h"
 using namespace std;
 
 void menu_config();
@@ -56,7 +56,9 @@ void load_menu() {
 
     if (global_menu == 1) {
 
-    cout << "Welcome to Eleven Terminal!" << endl;
+    cout << "Welcome to Eleven Terminal!" << endl; 
+    gtime();
+
     cout << "\n|| Algebra ||" << endl;
     cout << "[1] Clasic calculator" << endl;
     cout << "[2] Algebra calculations" << endl;
@@ -71,14 +73,15 @@ void load_menu() {
     cout << "[7] Info" << endl;
     cout << "[8] Tutorials" << endl;
     cout << "[9] About" << endl;
-    cout << "[10] Updates" << endl;
+    cout << "[10] Updates & Bugs" << endl;
 
     cout << "\n|| Customize ||" << endl;
     cout << "[11] Settings" << endl;
 
   } else if (global_menu == 2) {
 
-    cout << "Welcome to Eleven Terminal!" << endl;
+    cout << "Welcome to Eleven Terminal!" << endl; 
+    gtime();
     
     cout << "\n[1] Clasic calculator" << endl;
     cout << "[2] Algebra calculations" << endl;
@@ -93,14 +96,16 @@ void load_menu() {
     cout << "\n[7] Info" << endl;
     cout << "[8] Tutorials" << endl;
     cout << "[9] About" << endl;
-    cout << "[10] Updates" << endl;
+    cout << "[10] Updates & Bugs" << endl;
 
     
     cout << "[11] Settings" << endl;
 
   } else {
 
-    cout << "Welcome to Eleven Terminal!" << endl;
+    cout << "Welcome to Eleven Terminal!" << endl; 
+    gtime();
+    
     cout << "\n|| Algebra ||" << endl;
     cout << "[1] Clasic calculator" << endl;
     cout << "[2] Algebra calculations" << endl;
@@ -115,7 +120,7 @@ void load_menu() {
     cout << "[7] Info" << endl;
     cout << "[8] Tutorials" << endl;
     cout << "[9] About" << endl;
-    cout << "[10] Updates" << endl;
+    cout << "[10] Updates & Bugs" << endl;
 
     cout << "\n|| Customize ||" << endl;
     cout << "[11] Settings" << endl;

@@ -15,6 +15,7 @@ void settin(){
     cout << "Eleven Terminal - Settings" << endl;
     cout << "\n[1] Color changer" << endl;
     cout << "[2] Menu changer" << endl;
+    cout << "[3] Time changer" << endl;
     cout << "\n[9] Exit" << endl;
 
     cout << endl;
@@ -30,6 +31,9 @@ void settin(){
     } else if (aws == 2) {
         system("cls");
         menu();
+    } else if (aws == 3) {
+        system("cls");
+        ctime();
     }
 
 }

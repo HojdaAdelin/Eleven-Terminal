@@ -5,3 +5,6 @@ void configcolor();
 void loadconfigcolor();
 void menu();
 void load_menu();
+void ctime();
+void btime();
+void gtime();

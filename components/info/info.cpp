@@ -17,7 +17,7 @@ void creator(){
   cout << "\nThis app was created for simplify calculation." << endl;
   cout << "Country of origin: Romania" << endl;
   cout << "Date of creation: November, 2022" << endl;
-  cout << "Version: 2.0" << endl;
+  cout << "Version: 2.045" << endl;
   cout << "Hours of work: 22 hours" << endl;
   cout << "Building ID: iRe902K60fH2K0000" << endl;
   cout << "Version ID: 2.0GX" << endl;
@@ -42,13 +42,15 @@ void creator(){
 void updates(){
 
   int aws;
-
+  string update = "https://github.com/HojdaAdelin/Eleven-Terminal/releases";
+  string bugs = "https://github.com/HojdaAdelin/Eleven-Terminal/issues";
   system("cls");
   cout << "Eleven Terminal - Updates" << endl;
-  cout << "Current version: 2.0" << endl;
+  cout << "Current version: 2.045" << endl;
   cout << "\nUpdate news: " << endl;
-  cout << "\n-Source update\n-New copyright rule\n-New colors\n-Bugs fixed" << endl;
-  cout << "\n[7] Link for updates" << endl;
+  cout << "\n-Current date in menu\n-Bugs report\n-Links redirect\n-Config for date" << endl;
+  cout << "\n[7] Open updates" << endl;
+  cout << "[8] Open bugs report" << endl;
   cout << "[9] Exit" << endl;
 
   cin >> aws;
@@ -56,21 +58,21 @@ void updates(){
   switch (aws) {
     case 7:
 
-      int aws1;
-
-      cout << endl;
-      cout << "Link: https://github.com/HojdaAdelin/Eleven-Terminal/releases" << endl;
-      cout << "\n[9] Exit" << endl;
-      cin >> aws1;
-
-      if(aws1 = 9) {
-        updates();
-      }
+      system(string("start " + update).c_str());
+      system("cls");
+      updates();
+      break;
     case 9:
       system("cls");
       main();
-  }
+      break;
+   case 8:
 
+      system(string("start " + bugs).c_str());
+      system("cls");
+      updates();
+      break;
+}
 }
 
 void tutorials() {
