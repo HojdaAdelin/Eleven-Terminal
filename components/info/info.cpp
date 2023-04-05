@@ -1,5 +1,6 @@
 #include <iostream>
 #include "info.h"
+#include "../Generator/include.h"
 
 using namespace std;
 
@@ -19,11 +20,12 @@ void creator(){
   cout << "Date of creation: November, 2022" << endl;
   cout << "Version: 2.045" << endl;
   cout << "Hours of work: 22 hours" << endl;
-  cout << "Building ID: iRe902K60fH2K0000" << endl;
-  cout << "Version ID: 2.0GX" << endl;
+  cout << "Building ID: "; ID_procces();
+  cout << "\nVersion ID: 2.0GX" << endl;
   cout << "URank: 0.820" << endl;
   cout << "Operation Result Prediction: above 9.30" << endl;
-  cout << "Serial Number: 2XDDL500" << endl;
+  cout << "Serial Number: "; SERIAL_procces();
+  cout << endl;
   cout << endl;
   cout << "Eleven Terminal - GitHub" << endl;
   cout << "\nLink: github.com/HojdaAdelin" << endl;
@@ -48,7 +50,7 @@ void updates(){
   cout << "Eleven Terminal - Updates" << endl;
   cout << "Current version: 2.045" << endl;
   cout << "\nUpdate news: " << endl;
-  cout << "\n-Current date in menu\n-Bugs report\n-Links redirect\n-Config for date\n-Side theorem" << endl;
+  cout << "\n-Current date in menu\n-Bugs report\n-Links redirect\n-Config for date\n-Side theorem\n-New build id generator" << endl;
   cout << "\n[7] Open updates" << endl;
   cout << "[8] Open bugs report" << endl;
   cout << "[9] Exit" << endl;
