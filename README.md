@@ -16,6 +16,8 @@ Eleven Terminal have a lot of functionality easy to use and 100% free.
 
 -Current date display
 
+-Random building ID generator
+
 # Terminal Menu
 
 Before:
