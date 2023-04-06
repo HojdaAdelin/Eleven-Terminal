@@ -5,7 +5,7 @@
 using namespace std;
 
 void creator(){
-
+  string git = "https://github.com/HojdaAdelin";
   int aws;
 
   system("cls");
@@ -18,18 +18,19 @@ void creator(){
   cout << "\nThis app was created for simplify calculation." << endl;
   cout << "Country of origin: Romania" << endl;
   cout << "Date of creation: November, 2022" << endl;
-  cout << "Version: 2.045" << endl;
-  cout << "Hours of work: 22 hours" << endl;
+  cout << "Version: 2.085" << endl;
+  cout << "Hours of work: 48 hours" << endl;
   cout << "Building ID: "; ID_procces();
-  cout << "\nVersion ID: 2.0GX" << endl;
+  cout << "Version ID: 2.0GX" << endl;
   cout << "URank: 0.820" << endl;
   cout << "Operation Result Prediction: above 9.30" << endl;
   cout << "Serial Number: "; SERIAL_procces();
   cout << endl;
   cout << endl;
-  cout << "Eleven Terminal - GitHub" << endl;
+  cout << "Eleven Terminal - Creator github" << endl;
   cout << "\nLink: github.com/HojdaAdelin" << endl;
   cout << endl;
+  cout << "[8] Open github" << endl;
   cout << "[9] Exit" << endl;
   cin >> aws;
 
@@ -37,6 +38,10 @@ void creator(){
     case 9:
       system("cls");
       main();
+    case 8:
+      system(string("start " + git).c_str());
+      system("cls");
+      creator();
   }
 
 }
@@ -46,12 +51,14 @@ void updates(){
   int aws;
   string update = "https://github.com/HojdaAdelin/Eleven-Terminal/releases";
   string bugs = "https://github.com/HojdaAdelin/Eleven-Terminal/issues";
+  string contributor = "https://github.com/HojdaAdelin/Eleven-Terminal/pulls";
   system("cls");
   cout << "Eleven Terminal - Updates" << endl;
-  cout << "Current version: 2.045" << endl;
+  cout << "Current version: 2.085" << endl;
   cout << "\nUpdate news: " << endl;
-  cout << "\n-Current date in menu\n-Bugs report\n-Links redirect\n-Config for date\n-Side theorem\n-New build id generator" << endl;
-  cout << "\n[7] Open updates" << endl;
+  cout << "\n-New exit in calculator\n-Contributor link\n-Bugs fixed\n-Rename (About) submenu\n-Rename (Info) submenu\n-New redirect link to github\n-New system color" << endl;
+  cout << "\n[6] Open contribution" << endl;
+  cout << "[7] Open updates" << endl;
   cout << "[8] Open bugs report" << endl;
   cout << "[9] Exit" << endl;
 
@@ -67,6 +74,11 @@ void updates(){
     case 9:
       system("cls");
       main();
+      break;
+    case 6:
+      system(string("start " + contributor).c_str());
+      system("cls");
+      updates();
       break;
    case 8:
 
@@ -98,7 +110,7 @@ void tutorials() {
 
 void info(){
   int aws, choose;
-  cout << "Eleven Terminal - Info" << endl;
+  cout << "Eleven Terminal - Categories Info" << endl;
   cout << "In this section you can view how Eleven Terminal function work" << endl;
   cout << "\n[1] Clasic calculator" << endl;
   cout << "[2] Algebra calculator" << endl;

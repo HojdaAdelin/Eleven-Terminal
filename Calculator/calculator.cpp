@@ -16,11 +16,11 @@ void simpleCalculator() {
   cout << "[4] /" << endl;
   cout << "[5] %" << endl;
   cout << "[6] sqrt" << endl;
-  cout << "\n[0] Exit" << endl;
+  cout << "\n[9] Exit" << endl;
   cout << endl;
   cin >> operation;
 
-  if (operation == 0) {
+  if (operation == 9) {
     system("cls");
     main();
   } else {

@@ -176,6 +176,14 @@ int main() {
     case 4:
       system("cls");
       cout << "Eleven Terminal - Complex calculations" << endl;
+      cout << "\n! There is nothing here for now !" << endl;
+      cout << "\n[9] Exit" << endl;
+      cin >> choose;
+
+      if (choose == 9) {
+        system("cls");
+        main();
+      }
 
     case 7:
       system("cls");

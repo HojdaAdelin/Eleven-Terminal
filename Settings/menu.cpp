@@ -70,9 +70,9 @@ void load_menu() {
     cout << "[6] Geometry calculation" << endl;
     
     cout << "\n|| Informations ||" << endl;
-    cout << "[7] Info" << endl;
+    cout << "[7] Categories info" << endl;
     cout << "[8] Tutorials" << endl;
-    cout << "[9] About" << endl;
+    cout << "[9] About the app" << endl;
     cout << "[10] Updates & Bugs" << endl;
 
     cout << "\n|| Customize ||" << endl;
@@ -93,9 +93,9 @@ void load_menu() {
     cout << "[6] Geometry calculation" << endl;
     
     
-    cout << "\n[7] Info" << endl;
+    cout << "\n[7] Categories info" << endl;
     cout << "[8] Tutorials" << endl;
-    cout << "[9] About" << endl;
+    cout << "[9] About the app" << endl;
     cout << "[10] Updates & Bugs" << endl;
 
     
@@ -117,9 +117,9 @@ void load_menu() {
     cout << "[6] Geometry calculation" << endl;
     
     cout << "\n|| Informations ||" << endl;
-    cout << "[7] Info" << endl;
+    cout << "[7] Categories info" << endl;
     cout << "[8] Tutorials" << endl;
-    cout << "[9] About" << endl;
+    cout << "[9] About the app" << endl;
     cout << "[10] Updates & Bugs" << endl;
 
     cout << "\n|| Customize ||" << endl;
