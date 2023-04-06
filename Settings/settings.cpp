@@ -52,6 +52,7 @@ void color() {
     cout << "[6] Purple text" << endl;
     cout << "[7] Aqua text" << endl;
     cout << "[8] Light aqua bg & black text" << endl;
+    cout << "[9] Red bg & blue text" << endl;
     cout << "\n[0] Menu" << endl;
     cout << endl;
     cin >> colorcfg;
@@ -89,6 +90,10 @@ void color() {
         color();
     } else if (colorcfg == 8) {
         system("Color B0");
+        configcolor();
+        color();
+    } else if (colorcfg == 9) {
+        system("Color 41");
         configcolor();
         color();
     }
@@ -141,6 +146,8 @@ void loadconfigcolor() {
         
     } else if (loadcolor == 8) {
         system("Color B0");
+    } else if (loadcolor == 9) {
+        system("Color 41");
     }
 
 }
