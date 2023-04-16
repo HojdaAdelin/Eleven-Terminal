@@ -44,6 +44,7 @@ int main() {
       cout << "[9] Geometric mean" << endl;
       cout << "[10] Even or Odd number" << endl;
       cout << "[11] Gauss sum" << endl;
+      cout << "[12] Calculation with reports" << endl;
       cout << "\n[0] Menu" << endl;
       cout << endl;
       cin >> choose;
@@ -81,6 +82,9 @@ int main() {
       } else if (choose == 11) {
         system("cls");
         Gauss();
+      } else if (choose == 12) {
+        system("cls");
+        raport();
       } else if (choose == 0) {
         system("cls");
         main();

@@ -14,3 +14,4 @@ void factor();
 void geomean();
 void oddeven();
 void Gauss();
+void raport();

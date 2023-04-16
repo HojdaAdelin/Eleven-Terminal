@@ -421,3 +421,30 @@ void Gauss(){
 
   }
 }
+
+void raport() {
+  int n1, n2, n3, aws, operation;
+  cout << "Eleven Terminal - Calculation with reports" << endl;
+  cout << "\nType x   n1" << endl;
+  cout << "      -   -" << endl;
+  cout << "      n2   n3" << endl;
+  cout << "x = unknown number\nn1, n2, n3 = known numbers" << endl;
+
+  cout << "\nEnter n1, n2, n3" << endl;
+  cin >> n1 >> n2 >> n3;
+
+  operation = n2 * n1 / n3;
+
+  cout << "\nThe unknown number = " << operation << endl;
+  cout << "\n[8] Retry" << endl;
+  cout << "[9] Exit" << endl;
+  cin >> aws;
+
+  if (aws == 8) {
+    system("cls");
+    raport();
+  } else if (aws == 9) {
+    system("cls");
+    main();
+  }
+}

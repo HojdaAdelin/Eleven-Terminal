@@ -18,7 +18,7 @@ void creator(){
   cout << "\nThis app was created for simplify calculation." << endl;
   cout << "Country of origin: Romania" << endl;
   cout << "Date of creation: November, 2022" << endl;
-  cout << "Version: 2.085" << endl;
+  cout << "Version: 2.090" << endl;
   cout << "Hours of work: 48 hours" << endl;
   cout << "Building ID: "; ID_procces();
   cout << "Version ID: 2.0GX" << endl;
@@ -56,7 +56,7 @@ void updates(){
   cout << "Eleven Terminal - Updates" << endl;
   cout << "Current version: 2.090" << endl;
   cout << "\nUpdate news: " << endl;
-  cout << "\n-Adding continue in (Calculator)" << endl;
+  cout << "\n-Adding continue in (Calculator)\n-Calculation with reports" << endl;
   cout << "\n[6] Open contribution" << endl;
   cout << "[7] Open updates" << endl;
   cout << "[8] Open bugs report" << endl;
