@@ -201,6 +201,8 @@ int main() {
   } else if (choose == "dev") {
     system("cls");
     menu_code();
+  } else if (choose == "exit") {
+    system("exit");
   } else {
     system("cls");
       cout << "!  Enter a valid option  !" << endl;

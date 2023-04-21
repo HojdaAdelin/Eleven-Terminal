@@ -56,7 +56,7 @@ void updates(){
   cout << "Eleven Terminal - Updates" << endl;
   cout << "Current version: 2.1" << endl;
   cout << "\nUpdate news: " << endl;
-  cout << "\n-Adding continue in (Calculator)\n-Calculation with reports\n-In app code\n-Theorems" << endl;
+  cout << "\n-Adding continue in (Calculator)\n-Calculation with reports\n-In app code\n-Theorems\n-In main menu added (exit) command that exit the application" << endl;
   cout << "\n[6] Open contribution" << endl;
   cout << "[7] Open updates" << endl;
   cout << "[8] Open bugs report" << endl;
