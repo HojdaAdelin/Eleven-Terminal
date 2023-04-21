@@ -18,7 +18,7 @@ void creator(){
   cout << "\nThis app was created for simplify calculation." << endl;
   cout << "Country of origin: Romania" << endl;
   cout << "Date of creation: November, 2022" << endl;
-  cout << "Version: 2.090" << endl;
+  cout << "Version: 2.1" << endl;
   cout << "Hours of work: 48 hours" << endl;
   cout << "Building ID: "; ID_procces();
   cout << "Version ID: 2.0GX" << endl;
@@ -54,9 +54,9 @@ void updates(){
   string contributor = "https://github.com/HojdaAdelin/Eleven-Terminal/pulls";
   system("cls");
   cout << "Eleven Terminal - Updates" << endl;
-  cout << "Current version: 2.090" << endl;
+  cout << "Current version: 2.1" << endl;
   cout << "\nUpdate news: " << endl;
-  cout << "\n-Adding continue in (Calculator)\n-Calculation with reports" << endl;
+  cout << "\n-Adding continue in (Calculator)\n-Calculation with reports\n-In app code\n-Theorems" << endl;
   cout << "\n[6] Open contribution" << endl;
   cout << "[7] Open updates" << endl;
   cout << "[8] Open bugs report" << endl;
@@ -117,6 +117,7 @@ void info(){
   cout << "[3] Geometric area" << endl;
   cout << "[4] Percent calculation" << endl;
   cout << "[5] Geometry calculation" << endl;
+  cout << "[6] Display theorems" << endl;
   cout << "\n[9] Exit" << endl;
   cin >> choose;
 
@@ -209,6 +210,11 @@ void info(){
       main();
     }
     
+    break;
+
+  case 6:
+    system("cls");
+    theorems();
     break;
   case 9:
     system("cls");
