@@ -6,3 +6,5 @@ void updates();
 void info();
 void tutorials();
 void theorems();
+void areas();
+void algebra();
