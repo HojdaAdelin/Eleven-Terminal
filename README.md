@@ -37,6 +37,13 @@ Learn more:\
 G++ isn't the only way to build this project.\
 If you don't understand this tool you can learn from [Project doc](https://github.com/HojdaAdelin/Eleven-Terminal/blob/master/doc/BUILD.md)
 
+# In app commands
+
+1. exit -> exit the application
+2. dev -> open dev menu
+
+In dev menu you can view the code behind this app.
+
 # Configure feature
 
 To make more easier this app to be customized I add a small config feature.\
