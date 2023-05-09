@@ -71,7 +71,7 @@ void load_menu() {
     
     cout << "\n|| Informations ||" << endl;
     cout << "[7] Categories info" << endl;
-    cout << "[8] Tutorials" << endl;
+    cout << "[8] Theorems" << endl;
     cout << "[9] About the app" << endl;
     cout << "[10] Updates & Bugs" << endl;
 
@@ -94,7 +94,7 @@ void load_menu() {
     
     
     cout << "\n[7] Categories info" << endl;
-    cout << "[8] Tutorials" << endl;
+    cout << "[8] Theorems" << endl;
     cout << "[9] About the app" << endl;
     cout << "[10] Updates & Bugs" << endl;
 
@@ -118,7 +118,7 @@ void load_menu() {
     
     cout << "\n|| Informations ||" << endl;
     cout << "[7] Categories info" << endl;
-    cout << "[8] Tutorials" << endl;
+    cout << "[8] Theorems" << endl;
     cout << "[9] About the app" << endl;
     cout << "[10] Updates & Bugs" << endl;
 

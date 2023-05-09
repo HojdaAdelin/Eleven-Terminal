@@ -188,7 +188,7 @@ int main() {
       info();
   } else if (choose == "8") {
     system("cls");
-      tutorials();
+      theorems();
   } else if (choose == "9") {
     system("cls");
       creator();

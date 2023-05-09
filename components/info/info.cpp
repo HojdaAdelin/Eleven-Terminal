@@ -54,9 +54,9 @@ void updates(){
   string contributor = "https://github.com/HojdaAdelin/Eleven-Terminal/pulls";
   system("cls");
   cout << "Eleven Terminal - Updates" << endl;
-  cout << "Current version: 2.1" << endl;
+  cout << "Current version: 2.2" << endl;
   cout << "\nUpdate news: " << endl;
-  cout << "\n-Adding continue in (Calculator)\n-Calculation with reports\n-In app code\n-Theorems\n-In main menu added (exit) command that exit the application\nIn main menu added (dev) command that open the dev menu" << endl;
+  cout << "\n-Theorems menu" << endl;
   cout << "\n[6] Open contribution" << endl;
   cout << "[7] Open updates" << endl;
   cout << "[8] Open bugs report" << endl;
@@ -117,8 +117,7 @@ void info(){
   cout << "[3] Geometric area" << endl;
   cout << "[4] Percent calculation" << endl;
   cout << "[5] Geometry calculation" << endl;
-  cout << "[6] Display theorems" << endl;
-  cout << "[7] Dev" << endl;
+  cout << "[6] Dev" << endl;
   cout << "\n[9] Exit" << endl;
   cin >> choose;
 
@@ -213,12 +212,8 @@ void info(){
     
     break;
 
-  case 6:
-    system("cls");
-    theorems();
-    break;
   
-  case 7:
+  case 6:
     system("cls");
     cout << "To see the dev code inside the app just type (dev) in the main menu" << endl;
     cout << "\n[8] Menu" << endl;
