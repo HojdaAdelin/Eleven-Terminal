@@ -118,6 +118,7 @@ void info(){
   cout << "[4] Percent calculation" << endl;
   cout << "[5] Geometry calculation" << endl;
   cout << "[6] Dev" << endl;
+  cout << "[7] Config utility" << endl;
   cout << "\n[9] Exit" << endl;
   cin >> choose;
 
@@ -228,7 +229,22 @@ void info(){
       system("cls");
       main();
     }
+  case 7:
+    system("cls");
+    cout << "Config files need to be in the same directory whit the executable." << endl;
+    cout << "Thoose .cfg files work along whit Fstream library." << endl;
+    cout << "\n[8] Menu" << endl;
+    cout << "[9] Exit" << endl;
+    cin >> aws;
 
+    if (aws == 8) {
+      system("cls");
+      info();
+
+    } else if (aws == 9) {
+      system("cls");
+      main();
+    }
   case 9:
     system("cls");
     main();
