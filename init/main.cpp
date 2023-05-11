@@ -88,6 +88,9 @@ int main() {
         system("cls");
         main();
       }
+  } else if (choose == "clear") {
+    system("cls");
+    main();
   } else if (choose == "3") {
     system("cls");
       cout << "Eleven Terminal - Percent calculation" << endl;

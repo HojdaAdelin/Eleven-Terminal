@@ -423,7 +423,8 @@ void Gauss(){
 }
 
 void raport() {
-  int n1, n2, n3, aws, operation;
+  int n1, n2, n3, operation;
+  string aws;
   cout << "Eleven Terminal - Calculation with reports" << endl;
   cout << "\nType x   n1" << endl;
   cout << "      -   -" << endl;
@@ -440,10 +441,13 @@ void raport() {
   cout << "[9] Exit" << endl;
   cin >> aws;
 
-  if (aws == 8) {
+  if (aws == "8") {
     system("cls");
     raport();
-  } else if (aws == 9) {
+  } else if (aws == "clear") {
+    system("cls");
+    raport();
+  } else if (aws == "9") {
     system("cls");
     main();
   }
