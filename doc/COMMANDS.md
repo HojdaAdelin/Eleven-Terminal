@@ -1,3 +1,5 @@
+# Commands
+
 The default command to compile this project is in g++_shortcut.txt.
 
 If YOU CHANGE FILES NAME make sure you change the name in the main file and in g++ command.

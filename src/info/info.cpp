@@ -56,7 +56,7 @@ void updates(){
   cout << "Eleven Terminal - Updates" << endl;
   cout << "Current version: 2.2" << endl;
   cout << "\nUpdate news: " << endl;
-  cout << "\n-Theorems menu\n-Minor menu change\n-Config utility\n-Commands\n-Clear function\n-Source update\n-G++ file updated" << endl;
+  cout << "\n-Theorems menu\n-Minor menu change\n-Config utility\n-Commands\n-Clear function\n-Source update\n-G++ file updated\n-New doc\n-New README" << endl;
   cout << "\n[6] Open contribution" << endl;
   cout << "[7] Open updates" << endl;
   cout << "[8] Open bugs report" << endl;
