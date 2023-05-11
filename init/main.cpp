@@ -3,11 +3,11 @@
 #include <windows.h>
 
 #include "../Calculator/calculator.h"
-#include "../components/algebra.h"
-#include "../components/info/info.h"
-#include "../components/geometry.h"
+#include "../src/algebra.h"
+#include "../src/info/info.h"
+#include "../src/geometry.h"
 #include "../Settings/settings.h"
-#include "../components/Code/code_include.h"
+#include "../src/Code/code_include.h"
 
 using namespace std;
 
