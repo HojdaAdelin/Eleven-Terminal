@@ -1,21 +1,35 @@
 # Eleven-Terminal
+<p align="center">
+<img src="Images/logo.png" width="125" height="125" /> 
+</p>
+
 Eleven Terminal is a terminal calculator used to simplify the calculation.\
 Eleven Terminal have a lot of functionality easy to use and 100% free.
 # Features
 
--the areas of geometric figures
+- The areas of geometric figures
 
--geometric calculations
+- Geometric calculations
 
--algebraic calculations
+- Algebraic calculations
 
--G++ project
+- G++ project
 
--Menu configure & Color configure
+- Menu configure & Color configure
 
--Current date display
+- Current date display
 
--Random building ID generator
+- Random building ID generator
+
+- In app commands & code
+
+# Docs
+
+For: [Commands](https://github.com/HojdaAdelin/Eleven-Terminal/blob/master/doc/COMMANDS.md)
+
+For: [Modification](https://github.com/HojdaAdelin/Eleven-Terminal/blob/master/doc/MODIFICATIONS.md)
+
+For: [Config](https://github.com/HojdaAdelin/Eleven-Terminal/blob/master/doc/CONFIG.md)
 
 # Algebraic & geometric calculations
 
@@ -41,7 +55,7 @@ If you don't understand this tool you can learn from [Project doc](https://githu
 
 1. exit -> exit the application
 2. dev -> open dev menu
-
+3. clear -> clear the terminal
 In dev menu you can view the code behind this app.
 
 # Configure feature
@@ -63,10 +77,11 @@ This feature display the current date of the user.
 # Terminal Menu
 
 Default:
-![Screenshot 2023-03-31 120834](https://user-images.githubusercontent.com/83898333/230343451-9831ba8d-2d23-4826-a781-38b0dac93a4d.png)
+<p align="center">
+<img src="Images/new_menu.png" width="600" height="300" /> 
+</p>
 
 Colored:
-![Screenshot 2023-03-31 121005](https://user-images.githubusercontent.com/83898333/230343493-3986d302-ef8d-4c29-875c-a4782e6ff1f2.png)
-
-Old menu:
-![Screenshot 2023-04-06 125603](https://user-images.githubusercontent.com/83898333/230343524-5715a6c9-86cf-4c13-99a5-73930e7fd99e.png)
+<p align="center">
+<img src="Images/colored_menu.png" width="600" height="300" /> 
+</p>
