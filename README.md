@@ -57,7 +57,7 @@ If you don't understand this tool you can learn from [Project doc](https://githu
 2. dev -> open dev menu
 3. clear -> clear the terminal
 4. help -> help center
-In dev menu you can view the code behind this app.
+In dev menu you can view the code behind this app
 
 # Configure feature
 
