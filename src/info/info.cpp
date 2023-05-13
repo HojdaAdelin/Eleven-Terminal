@@ -9,16 +9,12 @@ void creator(){
   int aws;
 
   system("cls");
-  cout << "Eleven Terminal - About Creator" << endl;
-  cout << "\nCreator: H. Adelin" << endl;
-  cout << "Age[when the application was created]: 14" << endl;
-  cout << "Country of origion: Romania" << endl;
-  cout << endl;
   cout << "Eleven Terminal - About Application" << endl;
   cout << "\nThis app was created for simplify calculation." << endl;
+  cout << "Creator: H. Adelin" << endl;
   cout << "Country of origin: Romania" << endl;
   cout << "Date of creation: November, 2022" << endl;
-  cout << "Version: 2.2" << endl;
+  cout << "Version: 2.2.5" << endl;
   cout << "Hours of work: 88 hours" << endl;
   cout << "Building ID: "; ID_procces();
   cout << "Version ID: 2.0GX" << endl;
@@ -54,9 +50,9 @@ void updates(){
   string contributor = "https://github.com/HojdaAdelin/Eleven-Terminal/pulls";
   system("cls");
   cout << "Eleven Terminal - Updates" << endl;
-  cout << "Current version: 2.2" << endl;
+  cout << "Current version: 2.2.5" << endl;
   cout << "\nUpdate news: " << endl;
-  cout << "\n-Theorems menu\n-Minor menu change\n-Config utility\n-Commands\n-Clear function\n-Source update\n-G++ file updated\n-New doc\n-New README\n-'help' function" << endl;
+  cout << "\n-About rewrited" << endl;
   cout << "\n[6] Open contribution" << endl;
   cout << "[7] Open updates" << endl;
   cout << "[8] Open bugs report" << endl;
