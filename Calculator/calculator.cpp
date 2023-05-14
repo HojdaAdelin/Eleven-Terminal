@@ -1,146 +1,58 @@
 #include <iostream>
 #include "calculator.h"
-#include <math.h>
+#include <vector>
+#include <string>
 
 using namespace std;
 
 void simpleCalculator() {
   
-  int number1, number2, result, aws, operation, alternative;
+  int aws;
+  float num, sum;
+  string op;
+  vector<float> number;
+  cout << "Enter numbers(whit space, use '-0' to stop): ";
+  while (cin >> num && num !=-0) {
+    number.push_back(num);
+  }
 
-  cout << "Eleven Terminal - Calculator" << endl;
-  cout << "Select the operation:" << endl;
-  cout << "\n[1] +" << endl;
-  cout << "[2] -" << endl;
-  cout << "[3] *" << endl;
-  cout << "[4] /" << endl;
-  cout << "[5] %" << endl;
-  cout << "[6] sqrt" << endl;
-  cout << "\n[9] Exit" << endl;
-  cout << endl;
-  cin >> operation;
+  cout << "\n\nEnter the operator(+ , - , * , /):" << endl;
+  cin >> op;
 
-  if (operation == 9) {
+  if (op == "+") {
+    for (int i = 0; i < number.size(); i++) {
+      sum += number[i];
+    }
+  } else if (op == "-") {
+    sum = number[0];
+    for (int i = 1; i < number.size(); i++) {
+      sum -= number[i];
+    }
+  } else if (op == "*") {
+    sum = 1;
+    for (int i = 0; i < number.size(); i++) {
+      sum *= number[i];
+    }
+  } else if (op == "/") {
+    sum = number[0];
+    for (int i = 1; i < number.size(); i++) {
+      sum /= number[i];
+    }
+  }
+  cout << "\nThe result is " << sum << endl;
+  cout << "\n[8] Retry" << endl;
+  cout << "[9] Exit" << endl;
+  cin >> aws;
+
+  if (aws == 8) {
+    system("cls");
+    simpleCalculator();
+  } else if (aws == 9) {
     system("cls");
     main();
   } else {
-  cout << "\nEnter 2 numbers" << endl;
-  cin >> number1 >> number2;
-
-  switch (operation) {
-    case 1:
-      cout << endl;
-      cout << number1 << " + " << number2 << " = " << number1 + number2;
-      cout << "\n\n[7] Continue" << endl;
-      cout << "[8] Retry" << endl;
-      cout << "[9] Exit" << endl;
-      cin >> aws;
-      if (aws == 9) {
-        system("cls");
-        main();
-      } else if (aws == 8) {
-        system("cls");
-        simpleCalculator();
-      } else if (aws == 7) {
-        cout << "\nAdd a number" << endl;
-        cin >> alternative;
-        cout << "\nThe result = " << (number1 + number2) + alternative;
-        simpleCalculator();
-      }
-    case 2:
-      cout << endl;
-      cout << number1 << " - " << number2 << " = " << number1 - number2;
-      cout << "\n\n[7] Continue" << endl;
-      cout << "[8] Retry" << endl;
-      cout << "[9] Exit" << endl;
-      cin >> aws;
-      if (aws == 9) {
-        system("cls");
-        main();
-      } else if (aws == 8) {
-        system("cls");
-        simpleCalculator();
-      } else if (aws == 7) {
-        cout << "\nAdd a number" << endl;
-        cin >> alternative;
-        cout << "\nThe result = " << (number1 - number2) - alternative;
-        simpleCalculator();
-      }
-    case 3:
-      cout << endl;
-      cout << number1 << " * " << number2 << " = " << number1 * number2;
-      cout << "\n\n[7] Continue" << endl;
-      cout << "[8] Retry" << endl;
-      cout << "[9] Exit" << endl;
-      cin >> aws;
-      if (aws == 9) {
-        system("cls");
-        main();
-      } else if (aws == 8) {
-        system("cls");
-        simpleCalculator();
-      } else if (aws == 7) {
-        cout << "\nAdd a number" << endl;
-        cin >> alternative;
-        cout << "\nThe result = " << (number1 * number2) * alternative;
-        simpleCalculator();
-      }
-    case 4:
-      cout << endl;
-      cout << number1 << " / " << number2 << " = " << number1 / number2;
-      cout << "\n\n[7] Continue" << endl;
-      cout << "[8] Retry" << endl;
-      cout << "[9] Exit" << endl;
-      cin >> aws;
-      if (aws == 9) {
-        system("cls");
-        main();
-      } else if (aws == 8) {
-        system("cls");
-        simpleCalculator();
-      } else if (aws == 7) {
-        cout << "\nAdd a number" << endl;
-        cin >> alternative;
-        cout << "\nThe result = " << (number1 / number2) / alternative;
-        simpleCalculator();
-      }
-    case 5:
-      cout << endl;
-      cout << number1 << " % " << number2 << " = " << number1 % number2;
-      cout << "\n\n[7] Continue" << endl;
-      cout << "[8] Retry" << endl;
-      cout << "[9] Exit" << endl;
-      cin >> aws;
-      if (aws == 9) {
-        system("cls");
-        main();
-      } else if (aws == 8) {
-        system("cls");
-        simpleCalculator();
-      } else if (aws == 7) {
-        cout << "\nAdd a number" << endl;
-        cin >> alternative;
-        cout << "\nThe result = " << (number1 % number2) % alternative;
-        simpleCalculator();
-      }
-    case 6:
-      cout << "\nSQRT " << number1 << " = " << sqrt(number1) << "\nSQRT " << number2 << " = " << sqrt(number2) << endl;
-      cout << "\n\n[8] Retry" << endl;
-      cout << "[9] Exit" << endl;
-      cin >> aws;
-      if (aws == 9) {
-        system("cls");
-        main();
-      } else if (aws == 8) {
-        system("cls");
-        simpleCalculator();
-      }
-    
+    cout << "Wrong termen" << endl;
+    simpleCalculator();
   }
-  }
-
-  
-
-
 
 }
