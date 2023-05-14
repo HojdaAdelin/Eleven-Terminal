@@ -4,7 +4,7 @@
 
 #include "../src/Calculator/calculator.h"
 #include "../src/algebra.h"
-#include "../src/info/info.h"
+#include "../src/Info-Center/info.h"
 #include "../src/geometry.h"
 #include "../Settings/settings.h"
 #include "../src/Code/code_include.h"
