@@ -2,7 +2,7 @@
 #include <math.h>
 #include <windows.h>
 
-#include "../Calculator/calculator.h"
+#include "../src/Calculator/calculator.h"
 #include "../src/algebra.h"
 #include "../src/info/info.h"
 #include "../src/geometry.h"
