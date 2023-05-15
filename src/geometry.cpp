@@ -25,23 +25,54 @@ void triangleArea(){
   switch (c) {
     case 1:
       system("cls");
-      
-      cout << "\nEnter base value!" << endl;
-      cin >> base;
-      cout << endl;
-      cout << "Enter height value!" << endl;
-      cin >> height;
-      cout << endl;
-
-      operation = base * height / 2;
-      cout << "The result = " << operation << endl;
-      
+      int ch;
+      cout << "[1] Heron method" << endl;
+      cout << "[2] Normal method" << endl;
       cout << "\n[9] Exit" << endl;
-      cout << endl;
-      cin >> awv;
-      if (awv == 9){
-        triangleArea();
-      } 
+      cin >> ch;
+
+      if (ch == 1) {
+        int p, a, b, c, op, aws;
+        cout << "\nEnter sides values(max,min 3): \n\n";
+        cin >> a >> b >> c;
+        p = (a + b + c) / 2;
+        op = sqrt(p*(p-a)*(p-b)*(p-c));
+        cout << "\nThe result = " << op << endl;
+        cout << "[8] Areas menu" << endl;
+        cout << "[9] Exit" << endl;
+        cin >> aws;
+        if (aws == 8) {
+          system("cls");
+          triangleArea();
+        } else if (aws == 9) {
+          system("cls");
+          main();
+        }
+      } else if (ch == 2) {
+
+          cout << "\nEnter base value!" << endl;
+          cin >> base;
+          cout << endl;
+          cout << "Enter height value!" << endl;
+          cin >> height;
+          cout << endl;
+
+          operation = base * height / 2;
+          cout << "The result = " << operation << endl;
+          
+          cout << "\n[9] Exit" << endl;
+          cout << endl;
+          cin >> awv;
+          if (awv == 9){
+            system("cls");
+            main();
+          } 
+
+      } else if (ch == 9) {
+        system("cls");
+        main();
+      }
+      
 
     case 2:
       system("cls");

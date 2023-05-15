@@ -14,7 +14,7 @@ void creator(){
   cout << "Creator: H. Adelin" << endl;
   cout << "Country of origin: Romania" << endl;
   cout << "Date of creation: November, 2022" << endl;
-  cout << "Version: 2.2.5" << endl;
+  cout << "Version: 2.3" << endl;
   cout << "Hours of work: 88 hours" << endl;
   cout << "Building ID: "; ID_procces();
   cout << "Version ID: 2.0GX" << endl;
@@ -50,9 +50,9 @@ void updates(){
   string contributor = "https://github.com/HojdaAdelin/Eleven-Terminal/pulls";
   system("cls");
   cout << "Eleven Terminal - Updates" << endl;
-  cout << "Current version: 2.2.5" << endl;
+  cout << "Current version: 2.3" << endl;
   cout << "\nUpdate news: " << endl;
-  cout << "\n-About rewrited\n-Major Simple-Calculator update" << endl;
+  cout << "\n-About rewrited\n-Major Simple-Calculator update\n-Heron method" << endl;
   cout << "\n[6] Open contribution" << endl;
   cout << "[7] Open updates" << endl;
   cout << "[8] Open bugs report" << endl;
