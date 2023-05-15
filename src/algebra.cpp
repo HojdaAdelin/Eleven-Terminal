@@ -452,3 +452,36 @@ void raport() {
     main();
   }
 }
+
+void gr2() {
+  cout << "Eleven Terminal - Grade 2" << endl;
+  int delta, aws, a, b, c, sol1, sol2;
+
+  cout << "\nEnter the first number(a): ";
+  cin >> a;
+
+  cout << "\n\nEnter the second number(b): ";
+  cin >> b;
+
+  cout << "\n\nEnter the third number(c): ";
+  cin >> c;
+
+  delta = b * b - 4 * a * c;
+
+  if (delta < 0) {
+    int aws;
+    cout << "\n\nNo solution" << endl;
+    cout << "\n[8] Retry" << endl;
+    cout << "[9] Exit" << endl;
+
+    if (aws == 8) {
+      system("cls");
+      gr2();
+    } else if (aws == 9) {
+      system("cls");
+      main();
+    }
+  } else if (delta == 0) {
+    sol1 = -b / (2 * a);
+  }
+}
