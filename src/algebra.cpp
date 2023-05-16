@@ -483,5 +483,16 @@ void gr2() {
     }
   } else if (delta == 0) {
     sol1 = -b / (2 * a);
+    cout << "\nSolution: { " << sol1 << " }" << endl;
+    cout << "\n[8] Retry" << endl;
+    cout << "[9] Exit" << endl;
+
+    if (aws == 8) {
+      system("cls");
+      gr2();
+    } else if (aws == 9) {
+      system("cls");
+      main();
+    }
   }
 }
