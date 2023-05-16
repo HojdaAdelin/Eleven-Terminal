@@ -15,3 +15,4 @@ void geomean();
 void oddeven();
 void Gauss();
 void raport();
+void gr2();

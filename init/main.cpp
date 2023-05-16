@@ -112,13 +112,16 @@ int main() {
   } else if (choose == "4") {
     system("cls");
       cout << "Eleven Terminal - Complex calculations" << endl;
-      cout << "\n! There is nothing here for now !" << endl;
+      cout << "\n[1] Grade 2 equation" << endl;
       cout << "\n[9] Exit" << endl;
       cin >> menaws;
 
       if (menaws == 9) {
         system("cls");
         main();
+      } else if (menaws == 1) {
+        system("cls");
+        gr2();
       }
   } else if (choose == "5") {
     int alt;
