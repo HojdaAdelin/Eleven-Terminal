@@ -494,5 +494,24 @@ void gr2() {
       system("cls");
       main();
     }
+  } else if (delta > 0) {
+    sol1 = (-b - sqrt(delta)) / (2 * a);
+    sol2 = (-b + sqrt(delta)) / (2 * a);
+
+    cout << "\nSolutions: { X1=" << sol1 << "; X2=" << sol2 << " }" << endl;
+    cout << "\n[8] Retry" << endl;
+    cout << "[9] Exit" << endl;
+
+    if (aws == 8) {
+      system("cls");
+      gr2();
+    } else if (aws == 9) {
+      system("cls");
+      main();
+    }
+  } else {
+    system("cls");
+    cout << "Wrong termen!" << endl;
+    gr2();
   }
 }
