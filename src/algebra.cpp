@@ -1,6 +1,7 @@
 #include <iostream>
 #include "algebra.h"
 #include <math.h>
+#include <chrono>
 
 using namespace std;
 
@@ -466,10 +467,15 @@ void gr2() {
   cout << "\n\nEnter the third number(c): ";
   cin >> c;
 
+  auto start = std::chrono::high_resolution_clock::now();
+
   delta = b * b - 4 * a * c;
   
   if (delta < 0) {
-    
+    auto end = std::chrono::high_resolution_clock::now();
+    auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
+    cout << "\nExecution time: " << duration.count() << " milliseconds." << endl;
+
     cout << "\n\nNo solution" << endl;
     cout << "\n[8] Retry" << endl;
     cout << "[9] Exit" << endl;
@@ -484,6 +490,10 @@ void gr2() {
   } else if (delta == 0) {
     sol1 = -b / (2 * a);
     cout << "\nSolution: { " << sol1 << " }" << endl;
+    auto end = std::chrono::high_resolution_clock::now();
+    auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
+    cout << "\nExecution time: " << duration.count() << " milliseconds." << endl;
+
     cout << "\n[8] Retry" << endl;
     cout << "[9] Exit" << endl;
     cin >> aws;
@@ -499,6 +509,10 @@ void gr2() {
     sol2 = (-b + sqrt(delta)) / (2 * a);
 
     cout << "\nSolutions: { X1=" << sol1 << "; X2=" << sol2 << " }" << endl;
+    auto end = std::chrono::high_resolution_clock::now();
+    auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
+    cout << "\nExecution time: " << duration.count() << " milliseconds." << endl;
+
     cout << "\n[8] Retry" << endl;
     cout << "[9] Exit" << endl;
     cin >> aws;
@@ -514,4 +528,5 @@ void gr2() {
     cout << "Wrong termen!" << endl;
     gr2();
   }
+
 }
