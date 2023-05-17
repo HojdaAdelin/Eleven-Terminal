@@ -6,7 +6,7 @@
 #include "../src/algebra.h"
 #include "../src/Info-Center/info.h"
 #include "../src/geometry.h"
-#include "../Settings/settings.h"
+#include "../src/Settings/settings.h"
 #include "../src/Code/code_include.h"
 
 using namespace std;

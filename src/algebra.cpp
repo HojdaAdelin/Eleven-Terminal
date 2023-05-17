@@ -454,7 +454,7 @@ void raport() {
 }
 
 void gr2() {
-  cout << "Eleven Terminal - Grade 2" << endl;
+  cout << "Eleven Terminal - Grade 2 equation" << endl;
   int delta, aws, a, b, c, sol1, sol2;
 
   cout << "\nEnter the first number(a): ";
@@ -467,13 +467,13 @@ void gr2() {
   cin >> c;
 
   delta = b * b - 4 * a * c;
-
+  
   if (delta < 0) {
-    int aws;
+    
     cout << "\n\nNo solution" << endl;
     cout << "\n[8] Retry" << endl;
     cout << "[9] Exit" << endl;
-
+    cin >> aws;
     if (aws == 8) {
       system("cls");
       gr2();
@@ -486,7 +486,7 @@ void gr2() {
     cout << "\nSolution: { " << sol1 << " }" << endl;
     cout << "\n[8] Retry" << endl;
     cout << "[9] Exit" << endl;
-
+    cin >> aws;
     if (aws == 8) {
       system("cls");
       gr2();
@@ -501,7 +501,7 @@ void gr2() {
     cout << "\nSolutions: { X1=" << sol1 << "; X2=" << sol2 << " }" << endl;
     cout << "\n[8] Retry" << endl;
     cout << "[9] Exit" << endl;
-
+    cin >> aws;
     if (aws == 8) {
       system("cls");
       gr2();
