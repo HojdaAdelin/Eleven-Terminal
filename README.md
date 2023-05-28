@@ -13,6 +13,8 @@
 
 - Algebraic calculations
 
+- Complex calculations
+
 - G++ project
 
 - Menu configure & Color configure
