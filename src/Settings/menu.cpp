@@ -55,33 +55,36 @@ void load_menu() {
     readMenu.close();
 
     if (global_menu == 1) {
-
-    cout << "Welcome to Eleven Terminal!" << endl; 
+    
+    cout << "Eleven Terminal by @HojdaAdelin";
     gtime();
+    
+    
 
-    cout << "\n|| Algebra ||" << endl;
+    cout << "\n$Algebra" << endl;
     cout << "[1] Clasic calculator" << endl;
     cout << "[2] Algebra calculations" << endl;
     cout << "[3] Percent calculation" << endl;
     cout << "[4] Complex calculations" << endl;
 
-    cout << "\n|| Geometry ||" << endl;
+    cout << "\n$Geometry" << endl;
     cout << "[5] Geometric Area" << endl;
     cout << "[6] Geometry calculation" << endl;
     
-    cout << "\n|| Informations ||" << endl;
+    cout << "\n$Informations" << endl;
     cout << "[7] Categories info" << endl;
     cout << "[8] Theorems" << endl;
     cout << "[9] About the app" << endl;
     cout << "[10] Updates & Bugs" << endl;
 
-    cout << "\n|| Customize ||" << endl;
+    cout << "\n$Customize" << endl;
     cout << "[11] Settings" << endl;
 
   } else if (global_menu == 2) {
 
-    cout << "Welcome to Eleven Terminal!" << endl; 
+    cout << "Eleven Terminal by @HojdaAdelin"; 
     gtime();
+    
     
     cout << "\n[1] Clasic calculator" << endl;
     cout << "[2] Algebra calculations" << endl;
@@ -103,26 +106,27 @@ void load_menu() {
 
   } else {
 
-    cout << "Welcome to Eleven Terminal!" << endl; 
+    cout << "Eleven Terminal by @HojdaAdelin"; 
     gtime();
     
-    cout << "\n|| Algebra ||" << endl;
+    
+    cout << "\n$Algebra" << endl;
     cout << "[1] Clasic calculator" << endl;
     cout << "[2] Algebra calculations" << endl;
     cout << "[3] Percent calculation" << endl;
     cout << "[4] Complex calculations" << endl;
 
-    cout << "\n|| Geometry ||" << endl;
+    cout << "\n$Geometry" << endl;
     cout << "[5] Geometric Area" << endl;
     cout << "[6] Geometry calculation" << endl;
     
-    cout << "\n|| Informations ||" << endl;
+    cout << "\n$Informations" << endl;
     cout << "[7] Categories info" << endl;
     cout << "[8] Theorems" << endl;
     cout << "[9] About the app" << endl;
     cout << "[10] Updates & Bugs" << endl;
 
-    cout << "\n|| Customize ||" << endl;
+    cout << "\n$Customize" << endl;
     cout << "[11] Settings" << endl;
 
   }
