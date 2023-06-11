@@ -48,6 +48,9 @@ Learn more:\
 [G++ guide](https://code.visualstudio.com/docs/cpp/config-mingw)\
 [VS Code](https://code.visualstudio.com/)
 
+### If the icon.res is not recognized while build the app
+### Run the code from Builder/icon.txt in terminal and try build again 
+
 # Other tehnic to build the app
 
 G++ isn't the only way to build this project.\

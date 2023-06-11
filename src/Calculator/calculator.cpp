@@ -11,7 +11,7 @@ void simpleCalculator() {
   float num, sum;
   string op;
   vector<float> number;
-  cout << "Enter numbers(whit space, use '-0' to stop): ";
+  cout << "Enter numbers(with space, use '-0' to stop): ";
   while (cin >> num && num !=-0) {
     number.push_back(num);
   }
