@@ -14,7 +14,7 @@ void creator(){
   cout << "Creator: H. Adelin" << endl;
   cout << "Country of origin: Romania" << endl;
   cout << "Date of creation: November, 2022" << endl;
-  cout << "Version: 2.3" << endl;
+  cout << "Version: 2.5" << endl;
   cout << "Hours of work: 88 hours" << endl;
   cout << "Building ID: "; ID_procces();
   cout << "Version ID: 2.0GX" << endl;
